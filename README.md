@@ -15,7 +15,7 @@ Everything here is theory and illustration. No result establishes misconduct, in
 
 | Path | Contents |
 | --- | --- |
-| [recommendations.md](recommendations.md) | Contract-design recommendations and checklist for agencies, drawn from the results below |
+| [recommendations.md](recommendations.md) | Contract-design recommendations and checklist for agencies, the limits of contractual safeguards, and how design priorities differ across legacy, predictive, generative, and agentic systems |
 | [manuscript/vendor_exploitation.md](manuscript/vendor_exploitation.md) | Twelve procurement vulnerabilities, their generative/agentic AI variants, and priority hypotheses |
 | [game_theory/README.md](game_theory/README.md) | Model 1: competition, dependence, and amendment bargaining |
 | [game_theory/extensions.md](game_theory/extensions.md) | Models 2–9, optimal contract design, and calibration method |

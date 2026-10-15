@@ -61,6 +61,85 @@ Make vendors pay for what the agency values: verified, correct outcomes and the 
 - [ ] Common validation is assigned and funded.
 - [ ] Participating addenda require local acceptance testing before deployment.
 
+## Limits of contractual safeguards
+
+Contracts can align incentives on outcomes that are **observable and verifiable**, but only while the agency can still exit. Beyond that, safeguards hit predictable limits.
+
+### Limits that come from the models
+
+| Limit | Why it happens | Where it shows up |
+| --- | --- | --- |
+| **Safeguards aren't free** | With competitive bidding, vendors price risk into their bids, so the agency pays for every penalty and warranty. Penalties above the real harm cause over-investment and may thin the bidder pool. | Model 1 bid offset; Model 2 overinvestment |
+| **A remedy is only as good as the evidence behind it** | Effort responds to *chance of detection × penalty*. If errors are hard to observe or their classification is disputed, nominal clauses do nothing. | Model 1 (m·F); Model 2 (w is enforced coverage, not contract wording) |
+| **Lock-in undermines enforcement** | Termination and re-procurement threats are credible only if the agency can actually leave. The more dependent it is, the weaker every exit-based remedy. | Model 7: with larger cost savings or weaker detection, even auditing every time cannot deter substitution |
+| **Contracts get renegotiated** | Amendments are bargained under lock-in, so protections can be traded away mid-contract or before signature. | Model 1 bargaining |
+| **The agency can't bind its own future behavior** | Once bad output arrives, fixing it is the agency's best move. The vendor anticipates this, so remedies that apply only after the agency fails to fix things are neutralized. | Models 6 and 9: the vendor holds work at the review cutoff |
+| **Every measurable target can be gamed** | Pay for flags and you get flags; penalize only errors that reach applicants and the vendor manages around review. | Models 4 and 9 |
+| **One term alone often does nothing** | Safeguards work in pairs: warranty with portability, penalty with detection, reward with false-flag enforcement. | Model 8; Model 4 (the optimal per-flag reward falls from 8.9 to 2.7 when false flags are rarely caught) |
+| **Unforeseen change can't be priced in advance** | Pandemic programs, new federal guidance, and caseload spikes create genuinely new work. Contracts can only set *how* it is priced, through rate cards and change-order budgets. | Illinois PUA amendments; MiDAS CARES Act changes |
+| **One buyer can't fix a collective problem** | No single agency's contract funds testing whose benefits are shared across buyers. | Model 5 |
+
+### What the contract data add
+
+- **Remedies are rare and capped.** 3 of 19 state contracts have service-level fee reductions, capped at 5–20% of fees. Only 1 has performance liquidated damages. None pays for outcomes or states an accuracy standard.
+- **Protections erode in negotiation.** Arizona accepted four vendor deviations, each weakening a safeguard.
+- **Continuity overrides competition.** MiDAS ran through 13 monthly bridge extensions "while negotiations continue". The exit threat that safeguards rely on wasn't available.
+- **The counterparty can change.** Pondera contracts were reassigned to West Publishing (Thomson Reuters) mid-term after an acquisition, and Kansas bought through a reseller (SHI). Both blur who is responsible for remedies.
+- **Burden falls outside the contract.** Errors that hit applicants appear in no contract metric unless the agency writes them in.
+
+Safeguards therefore need non-contractual supports:
+
+- in-house technical capacity;
+- independent testing;
+- re-procurement planning that starts early;
+- representative audits of outcomes for applicants.
+
+## Does the optimal design differ for AI?
+
+### What the data can and cannot say
+
+The corpus is mostly **predictive risk scoring and legacy systems**, not generative or agentic AI:
+
+- **Predictive scoring:** Pondera, FraudCaster, COMPAS, Vant4ge, and OnPoint.
+- **Large, mostly rules-based builds:** MiDAS, the Deloitte UI systems, and HEAplus.
+
+The data therefore cannot compare AI with non-AI contracts, and they say nothing about generative or agentic systems. They do support one comparison: predictive-analytics subscriptions versus system builds.
+
+| Coded safeguard | Predictive analytics (11) | System builds (7) |
+| --- | --- | --- |
+| Any performance remedy (liquidated damages or service-level penalties) | **0** | 3 |
+| Transition assistance | 2 | 6 |
+| Source-code escrow | 1 | 3 |
+| Independent verification and validation | 0 | 2 |
+| Unit pricing | 4 | 3 |
+| Accuracy or false-positive standard | 0 | 0 |
+
+The scoring products, the most AI-like contracts in the corpus, carry the *fewest* safeguards. The comparison is confounded: they are small vendor-standard subscriptions, while the builds are custom projects worth $50 million or more.
+
+### What the theory says
+
+The core principle doesn't change: pay for verified outcomes, back them with enforceable remedies, and keep a credible exit. What changes is the parameters, so the binding term and its required strength shift.
+
+The table below re-runs the design optimizer under parameter shifts that plausibly distinguish the technologies. The shifts are illustrative, not estimated.
+
+| Technology | What plausibly differs | What the models say to emphasize |
+| --- | --- | --- |
+| **Legacy builds** | Lock-in and defect-driven amendments dominate; errors are relatively testable | Warranty enforcement, portability, and rate cards (Models 1, 2, 8). Optimal portability rises with dependence leverage, from 0.19 to 0.82 as leverage goes from 1 to 4. |
+| **Predictive scoring** | Payment tied to flags; false positives are hard to observe and harm applicants | Pay for validated findings, and set the reward together with false-flag enforcement. When false flags are rarely caught, the optimal per-flag reward falls by about two-thirds (Model 4). |
+| **Generative AI** | Output errors are pervasive, verifying them is costly, and providers swap models often | Remedies on raw error rates, measured staff review, and change notification (Models 6, 7, 9). Raising the vendor's savings from a cheaper model from 4 to 8, or cutting detection from 0.5 to 0.2, makes deterrence impossible even with certain auditing. Notification that raises detection to 0.8, plus a larger sanction, restores it. |
+| **Agentic AI** | The vendor's orchestration controls how much billable work happens, and actions can cause harm | Avoid usage pricing, cap and log actions, attach liability to actions, and require recovery duties. The optimum stays at no per-action price, but a bad price becomes far costlier when the vendor controls more of the workflow: at the same price, welfare loss rises from 7.4 to 19.3 (Model 9). |
+
+### Where theory is ambiguous: does AI raise or lower lock-in?
+
+- **Raises it:** dependence on retrieval systems, prompts, evaluation sets, and workflow state.
+- **Lowers it:** interchangeable foundation models and cheaper development.
+
+The models cannot settle this, and it determines whether portability terms matter more or less for AI. It is the main empirical question for a follow-up.
+
+### What a real comparison would need
+
+Generative and agentic contracts with their amendments, usage invoices, evaluation reports, and permission settings, classified by actual capability and deployment date rather than by signing year.
+
 ## Caveats
 
 - **Magnitudes are illustrative.** Figures such as "a 20% cap raises effort to 0.85" depend on uncalibrated value, cost, and burden parameters. The direction of each recommendation is robust within the models; the levels are not.
