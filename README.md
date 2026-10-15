@@ -97,37 +97,140 @@ simulation/.venv/bin/python -m http.server 8765 --directory dashboard/dist --bin
 
 ### Theoretical insights, illustrated
 
-The figures are solved directly from the models (`simulation/make_figures.py`) at illustrative default parameters, except Figure 7, which plots the calibration. Read the shapes, not the magnitudes.
+#### How to read these models
+
+Every model is a game between a **public agency** and a **vendor**.
+
+1. The agency writes the contract: what it pays for, what it checks, and what penalties apply.
+2. The vendor then chooses what is most profitable under those terms: how much effort to put into quality, how hard it makes itself to replace, how much billable work to do, or which cases to flag.
+3. The agency anticipates those choices.
+
+The **equilibrium** is what both sides actually do. The **planner** benchmark is what someone minimizing society's total real costs would choose; the gap between the two is waste. Money is in abstract "cost units", and parameters are illustrative.
+
+The figures below are solved directly from the models (`simulation/make_figures.py`); Figure 7 plots the contract calibration. **Read the shapes, not the numbers.**
+
+#### 1. A cheap first bid can be paid back through amendments
 
 ![Competitive initial bid falls and expected amendment payments rise as vendor bargaining power grows, while lifecycle payments stay nearly flat](docs/figures/01_bid_offset.png)
 
-**Lock-in rents move into the first bid (Model 1).** As the vendor's bargaining power over amendments rises, competitive bidders anticipate richer amendments and bid lower up front. Lifecycle payments barely move; what does rise is the cost of building dependence. So a low award price is not evidence of a good deal, and higher amendment prices are not evidence of excess profit. In 5 of 25 default scenarios the competitive bid is negative.
+**The situation.** Several vendors compete for a contract. Everyone knows that later changes are likely: new eligibility rules, extra features, more claims. Once the system is running, the agency can't easily switch vendors, so the winner negotiates the price of that later work alone. The horizontal axis, **bargaining power (θ)**, is how much of the gain from that negotiation the incumbent can claim.
+
+**What happens.**
+
+1. The more bargaining power the winner will have, the more profit it expects from future amendments.
+2. Because vendors compete for the award, they spend that expected profit up front by bidding lower. It works like a printer sold cheap because the ink is expensive.
+3. The initial bid (green) falls, and expected amendment payments (orange) rise by about the same amount.
+4. Total payments over the contract's life (blue) barely change. The small rise is real waste: money the vendor spends making itself hard to replace.
+
+**Why it matters.**
+
+- A low award price is not evidence of a good deal.
+- Expensive amendments are not, by themselves, evidence of excess profit.
+- Agencies should compare bids on expected **lifecycle** cost, and they should treat lock-in itself as the problem.
+
+In 5 of 25 default scenarios, competition would push the initial bid below zero.
+
+#### 2. Monitoring does nothing unless a failure costs the vendor something
 
 ![Vendor quality effort rises with monitoring when a penalty exists but stays at zero without one](docs/figures/02_remedy_binds.png)
 
-**Monitoring is worthless without a consequence (Model 1).** Effort responds to monitoring only through the expected penalty. With no enforceable penalty, effort is zero at every monitoring level, and three of the four calibrated contracts were in that position. A penalty at the highest service-level cap seen in the corpus (20%) restores substantial effort.
+**The situation.** The vendor decides how much to spend on quality. Failures hurt applicants, but the vendor feels them only if it pays for them. What it expects to pay is the **chance a failure is caught and enforced (m, horizontal axis)** times the **penalty when it is (F)**.
+
+**What happens.** With a penalty, more monitoring means a failure is more likely to cost the vendor, so it invests more in quality (blue and orange curves). With no enforceable penalty, the expected cost of failure is zero however closely the agency watches, so effort stays at zero (green). It is like a speed camera that never issues tickets.
+
+**Why it matters.** Write enforceable remedies first, then pay for detection. Three of the four calibrated contracts had no enforceable performance penalty. A penalty at the largest service-level cap found in the contracts (20% of fees, orange) restores substantial effort.
+
+#### 3. Lock-in and defects feed each other, and portability breaks the loop
 
 ![Prevention effort rises and excess social cost falls with portability, most strongly when warranty enforcement is weak](docs/figures/03_lockin_remediation.png)
 
-**Dependence and defects reinforce each other (Model 8).** When uncovered defects become paid amendments, dependence raises the margin on every repair, which weakens prevention, which makes dependence more valuable. Portability breaks the loop. With weak warranty enforcement (w = 0.25), raising portability from 0 to 5 lifts prevention from 0 to 0.34 and roughly halves excess social cost (7.5 → 3.9). Warranty and portability are complements.
+**The situation.** Some defects are inevitable, but the vendor can prevent many with effort. Two things can happen to a defect:
+
+- **Covered by the warranty:** the vendor fixes it at its own cost.
+- **Not covered:** the agency pays for the repair as an amendment, at a price negotiated with a vendor it can't easily replace.
+
+**Warranty enforcement (w)** is the share of defects actually treated as warranty repairs. That depends on who decides what counts as a defect. **Portability (p, horizontal axis)** is how easily the agency could hand the system to a different vendor.
+
+> **Is portability the same as open source?** Not quite. Open source is one route to portability, but neither guarantees the other. Portability means another vendor could take over without rebuilding from scratch, which requires:
+>
+> - **Data:** the agency owns its data and can export it in usable, documented formats.
+> - **Code:** the agency owns, or holds a license to, custom code built with public money. That can mean an open-source license, but it can also mean a proprietary product backed by source-code escrow the agency can actually use.
+> - **Interfaces:** open, documented connections to other systems, rather than proprietary ones only the incumbent understands.
+> - **Know-how:** documentation, knowledge transfer, and transition assistance at the end of the contract.
+>
+> Open-sourcing code helps because any vendor can maintain it, but a system can be open source and still locked in through undocumented configurations, vendor-controlled hosting, or knowledge held only by the incumbent's staff. Conversely, a proprietary product can be fairly portable if data export, open interfaces, and transition help are guaranteed. In the Arizona UI contract, the vendor negotiated **source code** out of the deliverables and barred the state from inspecting the code escrow, which lowered portability even though data ownership stayed with the state.
+
+**What happens.**
+
+1. The harder the vendor is to replace, the more it can charge for each paid repair.
+2. The more profitable paid repairs are, the less it pays to prevent defects.
+3. More defects make lock-in even more valuable to the vendor, and the loop closes.
+
+Portability cuts the repair margin and restores the incentive to prevent defects (left panel). With weak warranty enforcement (green), prevention is zero until portability passes a threshold, then rises; waste roughly halves, from 7.5 to 3.9 (right panel).
+
+**Why it matters.** Warranties and portability work as a pair: either one is weaker without the other. Agencies should keep sole authority to classify defects, since that is what makes a warranty real.
+
+#### 4. A penalty only on errors that reach applicants can be gamed
 
 ![With a penalty on uncorrected errors, vendor work stays flat at the agency's review cutoff over a range of usage prices](docs/figures/04_review_bunching.png)
 
-**A penalty only on errors that reach applicants can be gamed (Model 9).** The agency reviews whenever raw errors are high enough to be worth correcting, and reviewed errors carry no penalty. A vendor facing such a penalty (f = 12) therefore holds work at exactly the review cutoff (1.39) across a range of usage prices, so that staff keep correcting its errors. Tying remedies to raw errors removes this incentive.
+**The situation.** The vendor is paid per action: checks, retries, tool calls. More actions mean fewer errors. After seeing the output, the agency decides whether its staff should review and correct it, which is worthwhile only when the error rate is high (shaded band). The contract fines the vendor only for errors that **reach applicants**.
+
+**What happens.**
+
+1. If the vendor does little work, errors are high, so the agency reviews and its staff catch every error. The vendor owes nothing.
+2. If the vendor does a bit more work, errors fall below the point where review is worthwhile, and the agency stops reviewing.
+3. Now the remaining errors reach applicants, and the vendor pays fines on them.
+4. So doing slightly more work makes the vendor worse off. With the fine in place (orange), it stops exactly at the edge of the review band and stays there over a range of prices. It does more only once the per-action pay is high enough to outweigh the fines.
+
+**Why it matters.** The fine meant to protect applicants instead keeps public staff busy correcting the vendor's work. Penalize **raw** errors, measured before agency correction, or bill the vendor for the correction labor.
+
+#### 5. If the agency will fix bad work, the vendor stops preventing it
 
 ![Equilibrium social cost exceeds the planner's in the regime where the agency reviews only after low effort](docs/figures/05_review_regimes.png)
 
-**Because the agency will fix errors, the vendor stops preventing them (Model 6).** In the middle range of review costs the agency reviews only if the vendor delivers low quality. The vendor anticipates the rescue and chooses low effort, so public staff labor replaces vendor prevention. The gap between the equilibrium and the planner's choice is largest just before review becomes too expensive.
+**The situation.** A simpler version of the same problem. The vendor delivers high or low quality. The agency sees which, then decides whether to pay staff to review and correct the output. The horizontal axis is the agency's **cost of review (h)**.
+
+**What happens.** There are three regions:
+
+- **Review is cheap (left):** the agency always reviews. Here relying on review can sensibly be the low-cost choice.
+- **Review is very expensive (right):** the agency never reviews, so the vendor bears the cost of its own errors and delivers high quality.
+- **In between (shaded):** the agency reviews only if quality is low. The vendor knows bad work will be rescued, like a student who knows the teacher will rewrite the essay, so it delivers low quality.
+
+Public staff labor replaces vendor effort, and total cost (blue) rises well above what a planner would choose (orange). The gap is widest just before review becomes too expensive to bother with.
+
+**Why it matters.** Systems can show few final errors while hiding large amounts of staff correction work. Measure review labor, and tie remedies to the quality of what the vendor delivers.
+
+#### 6. Paying per flag lowers the bar for flagging
 
 ![The vendor's flagging threshold falls below the public-value threshold as the reward per flag rises, fastest when false flags are never penalized](docs/figures/06_flag_threshold.png)
 
-**Paying per flag lowers the bar for flagging (Model 4).** Each flag pays the same whether or not it is correct, so higher rewards lead the vendor to flag ever-weaker cases. Without any false-flag penalty, every case is flagged once the reward exceeds processing cost. No coded contract states a false-positive standard.
+**The situation.** The vendor screens cases for possible payment errors. For each case it knows the probability that the case really has an error, and it decides whether to flag it. It is paid a **reward per flag (t, horizontal axis)** whether or not the flag is right. It is penalized for a false flag only if the mistake is caught (**m**, the three lines).
+
+The vertical axis shows the **minimum probability a case needs before the vendor flags it**; lower means more flags. The dashed line is the public standard: flag only when the expected benefit of catching a real error outweighs the harm of a wrong flag, such as delays, appeals and lost benefits, plus processing cost.
+
+**What happens.** The vendor flags any case where the reward beats its expected penalty for being wrong. As the reward rises it flags weaker and weaker cases, and below the dashed line it is over-flagging. If false flags are never penalized (green), it flags *every* case once the reward exceeds its processing cost.
+
+**Why it matters.** Pay for findings that are validated, and set enforceable false-positive standards. None of the 19 coded state contracts states one.
+
+#### 7. The contract records can bound, but not pin down, vendor bargaining power
 
 ![Share of amendment price attributable to bargaining margin rises with bargaining weight for four contracts, with lines ending where the weight becomes inconsistent](docs/figures/07_identified_sets.png)
 
-**The contracts bound, but cannot pin down, bargaining power (calibration).** The same observed amendment spending can be read as mostly cost (low θ) or largely margin (high θ). Large amendments, as in Illinois and Michigan, are mostly cost under any θ. Small ones, as in Nevada and Indiana, rule out high bargaining power given the assumed switching costs; their lines end where θ becomes inconsistent.
+**The situation.** We observe how much each real contract grew after award, but not the vendor's costs. An amendment's price is the vendor's cost plus its bargaining margin. The same dollars could mean "mostly cost, weak leverage" or "mostly margin, strong leverage".
 
-**Validation gaps compound (Model 5, not pictured).** A local test is omitted whenever agencies value only part of its benefit, adding a loss that grows with the number of participating agencies. Across the default sweep the total loss ranges from 1.2 to 69.
+**How to read it.** Pick an assumed bargaining power on the horizontal axis. The vertical axis shows what share of the amendment price would then be margin. A line stops where the assumed power would imply a margin larger than the observed amendment, which is impossible.
+
+**What it shows.**
+
+- **Large amendments are mostly cost under any assumption.** Illinois' PUA system grew 2.6× its base during the pandemic claims surge; even maximal leverage explains under 8% of that as margin.
+- **Small amendments rule out strong leverage.** Indiana's $43,000 amendment is consistent only with low bargaining power, given the assumed switching costs.
+
+**Why it matters.** Contract documents alone can't tell overpayment from real work. That requires cost data, invoices, or competing bids for comparable work.
+
+#### Also: validation gaps compound (Model 5, not pictured)
+
+When many agencies buy through one cooperative contract, each hopes another will pay to test the product, so shared testing is underprovided. Separately, each agency skips its own local testing when it doesn't fully count harms to its applicants. That loss grows with the number of agencies; across the default sweep the total ranges from 1.2 to 69 cost units.
 
 ### Optimal contract design (default parameters)
 
