@@ -1,0 +1,25 @@
+family_id,item,basis,unit,price,document,quote
+NV-DWSS-PONDERA,Additional recipient validation profile,unit,profile-year,1.25,attVt56ZkUItDLdpr,Additional Recipients @$1.25/ profile/ year
+NV-DWSS-PONDERA,Super user bundle,unit,user-month,325,attVt56ZkUItDLdpr,$325 per user / month
+NV-DWSS-PONDERA,Additional case management user,unit,user-year,1800,attVt56ZkUItDLdpr,"Additional Case Users @ $1,800/user/year"
+NV-DWSS-PONDERA,Case support senior investigator,hourly,hour,130,attVt56ZkUItDLdpr,"Rates: $130/hr senior, $115/hr staff investigators"
+NV-DWSS-PONDERA,Case support staff investigator,hourly,hour,115,attVt56ZkUItDLdpr,"Rates: $130/hr senior, $115/hr staff investigators"
+NV-DWSS-PONDERA,Annual maintenance,fixed,year,194640,attVt56ZkUItDLdpr,"Annual Maintenance $194,640 Year 3-4 0% increase"
+IL-IDES-DELOITTE-PUA,Hosting and software,fixed,month,209322,att1dzZVhDujYbJw9,"Hosting/Software: $209,322.00 per month x 12 months"
+IL-IDES-DELOITTE-PUA,Staffing,fixed,month,138296,att1dzZVhDujYbJw9,"Staffing: $138,296.00 per month x 12 Months"
+IL-IDES-DELOITTE-PUA,Change-order project management,hourly,hour,200,att1dzZVhDujYbJw9,Project Management: $200.00/hr x 250 hours available
+IL-IDES-DELOITTE-PUA,Change-order development,hourly,hour,170,att1dzZVhDujYbJw9,"Development: $170.00/hr x 1,600 Hours available"
+IL-IDES-DELOITTE-PUA,Change-order testing,hourly,hour,150,att1dzZVhDujYbJw9,Testing: $150.00/hr x 400 hours available
+IL-IDES-DELOITTE-PUA,Annual change-order budget,fixed,year,380000,att1dzZVhDujYbJw9,"Annual Change Order Budget: $380,000.00"
+IL-IDES-PONDERA,First-year subscription,fixed,year,656329,attTBqJ10KXNGewUy,"The first-year subscription fee is $656,329 for the Pondera System"
+IL-IDES-PONDERA,CLEAR data run,fixed,one-time,198000,attTBqJ10KXNGewUy,"there is a one-time CLEAR data run fee of $198,000"
+VA-VITA-DELOITTE,Project executive,hourly,hour,320,attYUFAjijsYuKU32,Project Executive $320.00
+VA-VITA-DELOITTE,Data scientist 3,hourly,hour,268,attYUFAjijsYuKU32,Data Scientist 3 $268.00
+VA-VITA-DELOITTE,Tester 1,hourly,hour,60,attYUFAjijsYuKU32,Tester 1 $60.00
+WI-DOC-NORTHPOINTE,Professional services,hourly,hour,150,attrWE2S3kqWkegWK,$150/hr.
+WI-DOC-NORTHPOINTE,Project management,fixed,month,18000,attSWErjYLPKJeDft,"Project Management - Billed a flatfee of $18,000/mo."
+WI-DOC-NORTHPOINTE,COMPAS training,unit,session,4900,attSWErjYLPKJeDft,"22 - Three bay COMPAS Trainings - $4,900/session"
+MI-DTMB-FAST-MIDAS,Consultant FTE,fixed,FTE-year,385000,attxgRCi9QN59LTrH,"the addition of 7 FTE consultants at $385,000 each"
+MI-DTMB-FAST-MIDAS,Seven additional FTE (year 2),fixed,year,3066000,attxgRCi9QN59LTrH,"Year 2: Oct 2023 -Sept 2024: $3,066,000/yr or $255,600/month (if needed)"
+NE-DCS-VANT4GE,Risk/needs assessment suite (year 4),unit,suite-year,88000,att2CIBNSPyWqMJbV,"SUITE OF RISK/NEEDS ASS INST 2.0000 $ 88,000.0000"
+AZ-AHCCCS-ACCENTURE-HEAPLUS,Five-year award,fixed,contract,121341615,attpKrokaH6F9EFRz,"The total 5 year contract award is $121,341,615"

@@ -1,0 +1,145 @@
+<div id="procurement-explorer">
+  <h2>Procurement incentives</h2>
+  <div class="viz-controls">
+    <label class="form-label">Model
+      <select class="form-select" id="procurement-model">
+        <option value="1">1 · Dependence and bargaining</option>
+        <option value="2">2 · Paid remediation</option>
+        <option value="3">3 · Metered workflows</option>
+        <option value="4">4 · Rewarded flags</option>
+        <option value="5">5 · Shared validation</option>
+        <option value="6">6 · Human review</option>
+        <option value="7">7 · Post-award substitution</option>
+      </select>
+    </label>
+  </div>
+  <div id="procurement-legend" aria-label="Scenario series"></div>
+  <div id="procurement-plots"></div>
+  <div class="text-small" id="procurement-status" aria-live="polite"></div>
+  <div class="tooltip" role="tooltip" id="procurement-tooltip" hidden></div>
+  <script type="application/json" id="procurement-data">__SIMULATION_DATA__</script>
+</div>
+<style>
+#procurement-explorer {position:relative; color:var(--foreground)}
+#procurement-plots {display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-top:16px}
+#procurement-plots section {min-width:0}
+#procurement-plots h3 {margin-bottom:4px}
+#procurement-plots svg {display:block; width:100%; overflow:visible}
+#procurement-plots svg text {fill:var(--foreground);font-size:12px}
+#procurement-plots .domain, #procurement-plots .tick line {stroke:var(--border)}
+#procurement-legend {display:flex; flex-wrap:wrap; gap:12px; margin-top:12px}
+#procurement-legend button {display:inline-flex; align-items:center; gap:6px; border:0; background:transparent; color:var(--foreground); padding:4px 0; font:inherit}
+#procurement-legend button[aria-pressed="false"] {opacity:.5}
+#procurement-legend .swatch {width:20px; height:3px}
+#procurement-tooltip {position:absolute;pointer-events:none;background:var(--popover);color:var(--popover-foreground);padding:10px;z-index:5;max-width:270px}
+#procurement-status {margin-top:12px;color:var(--muted-foreground)}
+@media(max-width:800px) {#procurement-plots {grid-template-columns:1fr}}
+@media(pointer:coarse) {#procurement-legend button {min-height:44px}}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(() => {
+  const root=document.getElementById('procurement-explorer');
+  const data=JSON.parse(root.querySelector('#procurement-data').textContent);
+  const select=root.querySelector('#procurement-model');
+  const plots=root.querySelector('#procurement-plots');
+  const legend=root.querySelector('#procurement-legend');
+  const status=root.querySelector('#procurement-status');
+  const tooltip=root.querySelector('#procurement-tooltip');
+  const meta={
+    '1':{x:'Monitoring probability',g:'Portability',panels:[['effort','Quality effort','Effort units'],['dependence','Proprietary dependence','Dependence units'],['agency_gross_payment','Lifecycle payments','Cost units']],note:'Unrestricted bids; penalties excluded from agency receipts.'},
+    '2':{x:'Warranty enforcement probability',g:'Repair margin',panels:[['effort','Prevention effort','Effort units'],['defect_probability','Defects','Probability'],['welfare_loss','Excess social cost','Cost units']],note:'Defects are always repaired; social cost includes repair and harm.'},
+    '3':{x:'Payment per action (cost units)',g:'Outcome bonus',panels:[['work','Workflow intensity','Work units'],['success','Verified completion','Probability'],['welfare_loss','Welfare loss','Value units']],note:'Discretionary work only; fixed award payments excluded.'},
+    '4':{x:'Reward per flag (cost units)',g:'Enforcement',panels:[['threshold','Flagging threshold','Probability'],['false_positive_mass','False flags','Flags per case'],['welfare_loss','Welfare loss','Value units']],note:'Uniform calibrated scores; error prevalence = 50%.'},
+    '5':{x:'Participating agencies',g:'Testing cost',panels:[['no_test_probability','No validation','Probability'],['expected_tests','Testing activity','Expected tests'],['total_welfare_loss','Welfare loss (shared + local)','Value units']],note:'Symmetric mixed equilibrium when cost < benefit; otherwise no testing.'},
+    '6':{x:'Agency review cost (cost units)',g:'High-effort cost',panels:[['high_effort','High vendor effort','1 = high effort'],['agency_review_cost','Agency review labor','Cost units'],['welfare_loss','Excess social cost','Cost units']],note:'Perfect review; low effort and no review selected at respective ties.'},
+    '7':{x:'Credibility of termination',g:'Public harm',panels:[['selected_audit','Selected auditing','Probability'],['substitutes','Cheaper substitution','1 = substitutes'],['policy_welfare_loss','Audit-policy welfare loss','Value units']],note:'Benchmark: best feasible audit policy; social costs subtract real savings.'},
+    '8':{x:'Portability',g:'Warranty enforcement',panels:[['effort','Prevention effort','Effort units'],['dependence','Proprietary dependence','Dependence units'],['welfare_loss','Excess social cost','Cost units']],note:'Models 1+2: uncovered defects become amendments priced by lock-in bargaining.'},
+    '9':{x:'Payment per action (cost units)',g:'Uncorrected-error penalty',panels:[['work','Workflow intensity','Work units'],['agency_review_cost','Agency review cost','Cost units'],['welfare_loss','Excess social cost','Cost units']],note:'Models 3+6: agency reviews after observing output quality; reviews at indifference.'}
+  };
+  let model='1', hidden=new Set();
+  const fmt=d3.format('.3~g');
+  const color=i=>`var(--viz-series-${i+1})`;
+  function save(){
+    if(window.openai?.setWidgetState) window.openai.setWidgetState({modelContent:{model,hiddenSeries:[...hidden]},privateContent:null}).catch(()=>{});
+  }
+  function restore(state){
+    const s=state?.modelContent;
+    if(s && data[s.model]){model=String(s.model);hidden=new Set(Array.isArray(s.hiddenSeries)?s.hiddenSeries:[])}
+  }
+  restore(window.openai?.widgetState);
+  function draw(){
+    select.value=model; tooltip.hidden=true;
+    const entry=data[model], spec=meta[model], [xkey,gkey]=Object.keys(entry.sweep);
+    const groups=[...entry.sweep[gkey]].sort((a,b)=>a-b);
+    legend.replaceChildren();
+    groups.forEach((g,i)=>{
+      const button=document.createElement('button');button.type='button';button.className='cursor-interaction';
+      button.setAttribute('aria-pressed',String(!hidden.has(g)));
+      const swatch=document.createElement('span');swatch.className='swatch';swatch.style.background=color(i);
+      button.append(swatch,document.createTextNode(`${spec.g} = ${g}`));
+      button.onclick=()=>{hidden.has(g)?hidden.delete(g):hidden.add(g);save();draw()};
+      legend.append(button);
+    });
+    status.textContent=`${entry.rows.length} sampled scenarios · Illustrative, uncalibrated parameters · ${spec.note}`;
+    plots.replaceChildren();
+    spec.panels.forEach(([metric,title,unit])=>{
+      const section=document.createElement('section');const h=document.createElement('h3');h.textContent=title;section.append(h);plots.append(section);
+      const width=section.getBoundingClientRect().width;
+      if(width<1)return;
+      const height=275, left=66, right=14, top=20, bottom=64;
+      const svg=d3.select(section).append('svg').attr('viewBox',`0 0 ${width} ${height}`).attr('role','img').attr('aria-label',`${title} by ${spec.x}; ${spec.g} scenarios`);
+      svg.append('title').text(`${title}: ${unit}`);
+      const xd=d3.extent(entry.rows,r=>r[xkey]), yd=d3.extent(entry.rows,r=>Number(r[metric]));
+      const xp=(xd[1]-xd[0])*.025||.1, yp=(yd[1]-yd[0])*.07||.1;
+      const x=d3.scaleLinear().domain([xd[0]-xp,xd[1]+xp]).range([left+5,width-right-5]);
+      const y=d3.scaleLinear().domain([yd[0]-yp,yd[1]+yp]).range([height-bottom-5,top+5]);
+      svg.append('rect').attr('data-chart-frame','').attr('x',left).attr('y',top).attr('width',width-left-right).attr('height',height-top-bottom).attr('fill','none').attr('stroke','var(--border)');
+      const ticks=width<400?3:4;
+      svg.append('g').attr('transform',`translate(0,${height-bottom})`).call(d3.axisBottom(x).ticks(ticks).tickFormat(fmt));
+      svg.append('g').attr('transform',`translate(${left},0)`).call(d3.axisLeft(y).ticks(4).tickFormat(fmt));
+      svg.append('text').attr('class','axis-title').attr('data-axis','x').attr('x',(left+width-right)/2).attr('y',height-13).attr('text-anchor','middle').text(spec.x);
+      svg.append('text').attr('class','axis-title').attr('data-axis','y').attr('transform',`translate(15,${(top+height-bottom)/2}) rotate(-90)`).attr('text-anchor','middle').text(unit);
+      const series=groups.map((g,i)=>({g,i,points:entry.rows.filter(r=>r[gkey]===g).map(r=>({x:r[xkey],y:Number(r[metric])})).sort((a,b)=>a.x-b.x)})).filter(s=>!hidden.has(s.g));
+      for(const s of series){
+        svg.append('path').datum(s.points).attr('fill','none').attr('stroke',color(s.i)).attr('stroke-width',2).attr('stroke-dasharray',s.i%2?'5 3':null).attr('d',d3.line().x(d=>x(d.x)).y(d=>y(d.y)));
+        svg.append('g').selectAll('circle').data(s.points).join('circle').attr('cx',d=>x(d.x)).attr('cy',d=>y(d.y)).attr('r',3).attr('fill',color(s.i));
+      }
+      const guide=svg.append('line').attr('data-chart-hover-guide','').attr('y1',top).attr('y2',height-bottom).attr('stroke','var(--muted-foreground)').attr('visibility','hidden');
+      const markers=svg.append('g');
+      const overlay=svg.append('rect').attr('data-chart-hit','').attr('data-chart-hover-overlay','cross-series').attr('x',left).attr('y',top).attr('width',width-left-right).attr('height',height-top-bottom).attr('fill','transparent');
+      function hover(event){
+        const [px]=d3.pointer(event,svg.node());const value=Math.max(xd[0],Math.min(xd[1],x.invert(px)));
+        guide.attr('x1',x(value)).attr('x2',x(value)).attr('visibility','visible');
+        const points=series.map(s=>{
+          const idx=d3.bisector(d=>d.x).center(s.points,value);
+          const near=s.points[idx];
+          const a=value<near.x?(s.points[idx-1]||near):near;
+          const b=value<near.x?near:(s.points[idx+1]||near);
+          const v=a.x===b.x?a.y:a.y+(b.y-a.y)*(value-a.x)/(b.x-a.x);
+          return {...s,value:v};
+        });
+        markers.selectAll('circle').data(points).join('circle').attr('data-chart-hover-marker','').attr('cx',x(value)).attr('cy',d=>y(d.value)).attr('r',4).attr('fill',d=>color(d.i));
+        tooltip.replaceChildren();
+        const heading=document.createElement('div');heading.textContent=`${spec.x}: ${fmt(value)}`;tooltip.append(heading);
+        for(const point of points){const line=document.createElement('div');line.textContent=`${spec.g} ${point.g}: ${fmt(point.value)}`;tooltip.append(line)}
+        const note=document.createElement('div');note.className='text-small';note.textContent='Linear interpolation between samples';tooltip.append(note);
+        tooltip.hidden=false;
+        const bounds=root.getBoundingClientRect();
+        tooltip.style.left=`${Math.max(0,Math.min(event.clientX-bounds.left+12,bounds.width-tooltip.offsetWidth))}px`;
+        tooltip.style.top=`${Math.max(0,event.clientY-bounds.top-tooltip.offsetHeight-12)}px`;
+      }
+      overlay.on('pointermove',hover).on('click',hover).on('pointerleave',event=>{if(event.pointerType!=='touch'){tooltip.hidden=true;guide.attr('visibility','hidden');markers.selectAll('*').remove()}});
+      // Declutter numeric ticks using measured label bounds at the current width.
+      const labels=[...svg.node().querySelectorAll('.tick text')];
+      const accepted=[];
+      for(const label of labels){const b=label.getBoundingClientRect();if(accepted.some(a=>b.left<a.right+4&&b.right>a.left-4&&b.top<a.bottom+4&&b.bottom>a.top-4)){label.style.visibility='hidden'}else accepted.push(b)}
+    });
+  }
+  select.addEventListener('change',()=>{model=select.value;hidden.clear();save();draw()});
+  window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState){restore(event.detail.globals.widgetState);draw()}});
+  let width=0;
+  new ResizeObserver(entries=>{const w=entries[0].contentRect.width;if(Math.abs(w-width)>1){width=w;draw()}}).observe(root);
+  draw();
+})();
+</script>

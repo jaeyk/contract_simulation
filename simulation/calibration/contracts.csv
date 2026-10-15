@@ -1,0 +1,27 @@
+family_id,state,agency,vendor,system,contract_number,role,documents,notes
+IL-IDES-DELOITTE-PUA,IL,Department of Employment Security,Deloitte Consulting,Pandemic Unemployment Assistance claims system,4100127387,state_contract,attcdyV9wEP012P49;attHHYYa8pRdSrNiV;att8YzuaKmka4iVpo;attseA72UMt5i2kBJ;attjpGeNKoChKwyt3;attb2gsAtSFPVm4qw;attpU04I2rV9GSFxU;att1dzZVhDujYbJw9,Complete cost history through the 7th amendment
+MI-DTMB-FAST-MIDAS,MI,DTMB / Labor and Economic Opportunity,FAST Enterprises,MiDAS unemployment tax and benefits system,071B1300367,state_contract,attxgRCi9QN59LTrH,Change notices 3-32 only; the 2011 award and notices 1-2 are not in the file
+NV-DWSS-PONDERA,NV,DHHS Division of Welfare and Supportive Services,Pondera Solutions,SNAP recipient integrity (fraud detection),,state_contract,attVt56ZkUItDLdpr;attChvFaSMB7c15tV,Amendment 1 and other Pondera scans lack a text layer and are not coded
+IN-FSSA-FRAUDCASTER,IN,FSSA Division of Family Resources,West Publishing (Thomson Reuters),FraudCaster / Fraud Detect and CaseTracker,60243,state_contract,attfgXVN66Y9yLtxY;attO7WhUuCGi1z9Po,
+IN-DWD-PONDERA,IN,Department of Workforce Development,Pondera Solutions / West Publishing,Unemployment insurance fraud analytics,51025,state_contract,att6xpYaiHvzMj8rC;attQoEobslosgatw2,Amendment 1 only reassigns the contract after acquisition
+IL-IDES-PONDERA,IL,Department of Employment Security,Pondera Solutions,Unemployment insurance fraud analytics,4100132391,state_contract,attTBqJ10KXNGewUy,
+DC-DHS-PONDERA,DC,Department of Human Services,Pondera Solutions,Fraud case management and data analytics subscription,CW85535,state_contract,attmxalxWB1sKXQDz;attCqS1lmNYDrf1C7,Modification M0002 exercises an option; proposal and solicitation documents are excluded from term coding
+WI-DOC-NORTHPOINTE,WI,Department of Corrections,Northpointe,COMPAS risk and needs assessment,C2015,state_contract,attrWE2S3kqWkegWK;attSWErjYLPKJeDft;attbRkk25iEDt1D5M;att8zvrGR25fx5qjD;attMfYkqSV0D8WYIh;attlmSsrAfUG7o06v,Successive annual agreements and extensions
+NE-DCS-VANT4GE,NE,Department of Correctional Services,All Vest Information Services (Vant4ge),Risk and needs assessment suite,46020183 / 46020855,state_contract,attZn22VyqM7nOIsB;att2CIBNSPyWqMJbV,Poor OCR in the original award
+MI-DTMB-DELOITTE-UI,MI,DTMB / Labor and Economic Opportunity,Deloitte Consulting,Unemployment insurance solution (uFACTS),230000000704,state_contract,atttdMzAD6cBMJxvO,
+VA-VITA-DELOITTE,VA,Virginia Information Technologies Agency,Deloitte Consulting,IT solution contract,VA-150915-DELC,state_contract,att1HErZ7jYMOE0s2;attYUFAjijsYuKU32;attaYnrFCaa0fl81K,
+AZ-DES-GEOSOL-UI,AZ,Department of Economic Security,Geographic Solutions,UI benefits modernization,CTR063562,state_contract,attJNXGVUzffMnVdY;attSuWT0CXsRAQ3SO;attN5t25L6IDaMbhr;attwXI2DmRkUwpJXv,Memorandum of negotiations records accepted vendor deviations
+AZ-AHCCCS-ACCENTURE-HEAPLUS,AZ,AHCCCS and DES,Accenture,HEAplus eligibility maintenance and operations,YH20-0001,state_contract,attmXoDdmy1jOfG4H;attpKrokaH6F9EFRz;attBgf7sPZJVSxyGP;atttbpxSJTHFv0oO6,
+OH-DAS-DELOITTE-SACWIS,OH,DAS for Job and Family Services,Deloitte Consulting,Statewide Automated Child Welfare Information System,0A1292,state_contract,att2CkRUy6n1ayM8Z;attBQeTFQ9o8olG1h,Only amendments 1 and 5 are in the file; base value unknown
+IA-IDPH-PONDERA,IA,Department of Public Health,Pondera Solutions,Public-records search for disease investigations,,state_contract,attXzfTOBlgXvLEPq,
+ND-DOH-PROUDCROWD,ND,Department of Health,ProudCrowd,Care19 contact-tracing app,,state_contract,attCP0jg6gkEwmONo,
+TX-TWC-ONPOINT,TX,Texas Workforce Commission,OnPoint Technologies,Identity-theft detection for UI claims,,state_contract,attGtMjPye0LhMSqo;att4m5uPPAykAs2V6,
+KS-DOA-PONDERA,KS,Department of Administration (for Labor),SHI reselling Pondera,UI fraud analytics,50147,state_contract,attS7rfXOMLWdWLDT;attCMM4r0lNR57rvg,Reseller layer: Thomson Reuters contract number appears on the SHI invoice
+DC-DCHA-RENTGROW,DC,Housing Authority,RentGrow,Tenant screening,,state_contract,atthX9MzTfKmF4nkW,
+NASPO-CLOUD-SHI,UT (lead),NASPO ValuePoint cloud solutions,SHI International,Cloud solutions master agreement and Utah participating addendum,AR2488,cooperative,attQpRMpvhQMI3NEh;attZa6xDJPgnmNNEz,Duplicate scans excluded
+NASPO-CLOUD-CARAHSOFT,UT (lead),NASPO ValuePoint cloud solutions,Carahsoft,Cloud solutions master agreement,,cooperative,attfGqEf6Yz4R5GQt;attQjsKtOc92cblp6,Participating addendum scan lacks a text layer
+NASPO-CLOUD-QUEST,UT (lead),NASPO ValuePoint cloud solutions,Quest,Cloud solutions master agreement,,cooperative,attX0eok6igU3Y6rE;attI9G0yfYPdIyEa4,Participating addendum scan lacks a text layer
+NASPO-CLOUD-TCC,UT (lead),NASPO ValuePoint cloud solutions,TCC Software Solutions,Cloud solutions master agreement,,cooperative,att8gcf9xSiJUklR4,
+NASPO-CLOUD-DELOITTE,UT (lead),NASPO ValuePoint cloud solutions,Deloitte Consulting,Cloud solutions master agreement,,cooperative,attVxNGm8fvTreJkl,
+NASPO-CLOUD-ENFORMION,UT (lead),NASPO ValuePoint cloud solutions,Enformion,Public-records data master agreement,AR3097,cooperative,attRGDCRjSiJmNx3G,
+NASPO-MMIS-OPTUM,MT (lead),NASPO ValuePoint MMIS,Optum,MMIS provider services module; Montana participating addendum and North Carolina module,,cooperative,attcHlYcYTuzPAOgG;attQGjrkcChFRcu95,
