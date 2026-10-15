@@ -1,0 +1,519 @@
+[
+  {
+    "model": "1",
+    "objective": "agency_value",
+    "value": 11.699065484232912,
+    "instruments": {
+      "m": 0.86008,
+      "p": 0.4288
+    },
+    "governance_cost": 0,
+    "fixed": {
+      "omega": 0
+    },
+    "outcome": {
+      "effort": 1.6506724636042795,
+      "dependence": 0.3499440089585666,
+      "success": 0.8080791945395451,
+      "burden": 0.9596040273022741,
+      "switching_cost": 1.4898432376239734,
+      "amendment_price": 3.2449216188119867,
+      "initial_price": 2.451801849951994,
+      "negative_initial_bid": false,
+      "vendor_revenue": 4.074262659357987,
+      "vendor_real_cost": 2.4235901957537074,
+      "expected_penalty": 1.6506724636042798,
+      "vendor_profit": -2.220446049250313e-16,
+      "agency_gross_payment": 4.074262659357987,
+      "agency_net_payment_if_penalty_received": 2.4235901957537074,
+      "agency_value": 11.699065484232912,
+      "social_welfare_if_penalty_transfer": 12.390133920534918
+    },
+    "name": "1a",
+    "label": "Model 1, agency chooses monitoring and portability (omega=0)",
+    "default_instruments": {
+      "m": 0.5,
+      "p": 1.0
+    },
+    "default_value": 11.230027505107985
+  },
+  {
+    "model": "1",
+    "objective": "agency_value",
+    "value": 10.787600637528591,
+    "instruments": {
+      "m": 1.0,
+      "p": 0.4288
+    },
+    "governance_cost": 0,
+    "fixed": {
+      "omega": 1
+    },
+    "outcome": {
+      "effort": 1.7455280027406994,
+      "dependence": 0.3499440089585666,
+      "success": 0.8254471997259301,
+      "burden": 0.8727640013703497,
+      "switching_cost": 1.4898432376239734,
+      "amendment_price": 3.2449216188119867,
+      "initial_price": 2.70773160221367,
+      "negative_initial_bid": false,
+      "vendor_revenue": 4.330192411619663,
+      "vendor_real_cost": 2.584664408878964,
+      "expected_penalty": 1.7455280027406994,
+      "vendor_profit": -4.440892098500626e-16,
+      "agency_gross_payment": 4.330192411619663,
+      "agency_net_payment_if_penalty_received": 2.5846644088789636,
+      "agency_value": 10.787600637528591,
+      "social_welfare_if_penalty_transfer": 12.53312864026929
+    },
+    "name": "1b",
+    "label": "Model 1, agency chooses monitoring and portability (omega=1)",
+    "default_instruments": {
+      "m": 0.5,
+      "p": 1.0
+    },
+    "default_value": 9.903302839865786
+  },
+  {
+    "model": "1",
+    "objective": "agency_value",
+    "value": 9.04207263478789,
+    "instruments": {
+      "m": 1.0,
+      "p": 0.4288
+    },
+    "governance_cost": 0,
+    "fixed": {
+      "omega": 3
+    },
+    "outcome": {
+      "effort": 1.7455280027406994,
+      "dependence": 0.3499440089585666,
+      "success": 0.8254471997259301,
+      "burden": 0.8727640013703497,
+      "switching_cost": 1.4898432376239734,
+      "amendment_price": 3.2449216188119867,
+      "initial_price": 2.70773160221367,
+      "negative_initial_bid": false,
+      "vendor_revenue": 4.330192411619663,
+      "vendor_real_cost": 2.584664408878964,
+      "expected_penalty": 1.7455280027406994,
+      "vendor_profit": -4.440892098500626e-16,
+      "agency_gross_payment": 4.330192411619663,
+      "agency_net_payment_if_penalty_received": 2.5846644088789636,
+      "agency_value": 9.04207263478789,
+      "social_welfare_if_penalty_transfer": 12.53312864026929
+    },
+    "name": "1c",
+    "label": "Model 1, agency chooses monitoring and portability (omega=3)",
+    "default_instruments": {
+      "m": 0.5,
+      "p": 1.0
+    },
+    "default_value": 7.249853509381384
+  },
+  {
+    "model": "1",
+    "objective": "social_welfare_if_penalty_transfer",
+    "value": 12.53312864026929,
+    "instruments": {
+      "m": 1.0,
+      "p": 0.4288
+    },
+    "governance_cost": 0,
+    "fixed": {},
+    "outcome": {
+      "effort": 1.7455280027406994,
+      "dependence": 0.3499440089585666,
+      "success": 0.8254471997259301,
+      "burden": 0.8727640013703497,
+      "switching_cost": 1.4898432376239734,
+      "amendment_price": 3.2449216188119867,
+      "initial_price": 2.70773160221367,
+      "negative_initial_bid": false,
+      "vendor_revenue": 4.330192411619663,
+      "vendor_real_cost": 2.584664408878964,
+      "expected_penalty": 1.7455280027406994,
+      "vendor_profit": -4.440892098500626e-16,
+      "agency_gross_payment": 4.330192411619663,
+      "agency_net_payment_if_penalty_received": 2.5846644088789636,
+      "agency_value": 10.787600637528591,
+      "social_welfare_if_penalty_transfer": 12.53312864026929
+    },
+    "name": "1s",
+    "label": "Model 1, social optimum over monitoring and portability",
+    "default_instruments": {
+      "m": 0.5,
+      "p": 1.0
+    },
+    "default_value": 11.230027505107985
+  },
+  {
+    "model": "2",
+    "objective": "social_cost",
+    "value": 5.1726440850702,
+    "instruments": {
+      "w": 0.7688
+    },
+    "governance_cost": 1.18210688,
+    "fixed": {},
+    "outcome": {
+      "effort": 1.0751081591870295,
+      "public_effort": 1.7455280027406994,
+      "defect_probability": 0.34126084280949387,
+      "private_defect_loss": 3.1504000000000003,
+      "vendor_revenue_excluding_fixed": 0.39449753428777484,
+      "vendor_real_cost": 1.2604504625942492,
+      "expected_penalty": 0.7870840078558167,
+      "vendor_profit_excluding_fixed": -1.653036936162291,
+      "agency_gross_payment_excluding_fixed": 0.39449753428777484,
+      "social_cost": 3.9905372050702,
+      "public_social_cost": 3.268962006916667,
+      "welfare_loss": 0.7215751981535332
+    },
+    "name": "2a",
+    "label": "Model 2, warranty enforcement with enforcement cost",
+    "default_instruments": {
+      "w": 0.5
+    },
+    "default_value": 6.332258660026258
+  },
+  {
+    "model": "2",
+    "objective": "social_cost",
+    "value": 4.7661588732452245,
+    "instruments": {
+      "w": 0.5699200000000001,
+      "mu": 0.0
+    },
+    "governance_cost": 0.6496176128000002,
+    "fixed": {},
+    "outcome": {
+      "effort": 1.0237278822456024,
+      "public_effort": 1.7455280027406994,
+      "defect_probability": 0.35925318720016913,
+      "private_defect_loss": 2.8496000000000006,
+      "vendor_revenue_excluding_fixed": 0.3090152215020974,
+      "vendor_real_cost": 1.2425157628438712,
+      "expected_penalty": 0.6142367293473613,
+      "vendor_profit_excluding_fixed": -1.5477372706891352,
+      "agency_gross_payment_excluding_fixed": 0.3090152215020974,
+      "social_cost": 4.116541260445224,
+      "public_social_cost": 3.268962006916667,
+      "welfare_loss": 0.8475792535285573
+    },
+    "name": "2b",
+    "label": "Model 2, warranty enforcement and repair-price cap",
+    "default_instruments": {
+      "w": 0.5,
+      "mu": 3.0
+    },
+    "default_value": 6.332258660026258
+  },
+  {
+    "model": "3",
+    "objective": "social_welfare",
+    "value": 6.660360307587771,
+    "instruments": {
+      "t": 2.8888
+    },
+    "governance_cost": 0,
+    "fixed": {
+      "R": 0
+    },
+    "outcome": {
+      "work": 1.8887999999999998,
+      "public_work": 1.8889115588688483,
+      "work_gap": -0.00011155886884850474,
+      "success": 0.6110871513793885,
+      "vendor_revenue_excluding_fixed": 5.456365439999999,
+      "vendor_real_cost": 3.6725827199999994,
+      "vendor_profit_excluding_fixed": 1.7837827199999996,
+      "burden": 1.8887999999999998,
+      "social_welfare": 6.660360307587771,
+      "public_social_welfare": 6.660360325910435,
+      "welfare_loss": 1.8322664274705858e-08
+    },
+    "name": "3u",
+    "label": "Model 3, usage price only",
+    "default_instruments": {
+      "t": 3.0
+    },
+    "default_value": 6.642411176571153
+  },
+  {
+    "model": "3",
+    "objective": "social_welfare",
+    "value": 6.660360324210695,
+    "instruments": {
+      "R": 14.857600000000001
+    },
+    "governance_cost": 0,
+    "fixed": {
+      "t": 0
+    },
+    "outcome": {
+      "work": 1.8889455373887887,
+      "public_work": 1.8889115588688483,
+      "work_gap": 3.397851994035861e-05,
+      "success": 0.6111154510299391,
+      "vendor_revenue_excluding_fixed": 9.079708925222425,
+      "vendor_real_cost": 3.6730031589992986,
+      "vendor_profit_excluding_fixed": 5.406705766223126,
+      "burden": 1.8889455373887887,
+      "social_welfare": 6.660360324210695,
+      "public_social_welfare": 6.660360325910435,
+      "welfare_loss": 1.6997407925600783e-09
+    },
+    "name": "3o",
+    "label": "Model 3, outcome bonus only",
+    "default_instruments": {
+      "R": 0.0
+    },
+    "default_value": 0.0
+  },
+  {
+    "model": "3",
+    "objective": "social_welfare",
+    "value": 6.660360325480866,
+    "instruments": {
+      "t": 2.5,
+      "R": 2.0
+    },
+    "governance_cost": 0,
+    "fixed": {},
+    "outcome": {
+      "work": 1.8888944773306382,
+      "public_work": 1.8889115588688483,
+      "work_gap": -1.7081538210117486e-05,
+      "success": 0.6111055226693618,
+      "vendor_revenue_excluding_fixed": 5.944447238665319,
+      "vendor_real_cost": 3.6728556505757304,
+      "vendor_profit_excluding_fixed": 2.2715915880895885,
+      "burden": 1.8888944773306382,
+      "social_welfare": 6.660360325480866,
+      "public_social_welfare": 6.660360325910435,
+      "welfare_loss": 4.2956926904480497e-10
+    },
+    "name": "3m",
+    "label": "Model 3, usage price and outcome bonus",
+    "default_instruments": {
+      "t": 3.0,
+      "R": 0.0
+    },
+    "default_value": 6.642411176571153
+  },
+  {
+    "model": "4",
+    "objective": "social_welfare",
+    "value": 16.457142784,
+    "instruments": {
+      "t": 5.428800000000001
+    },
+    "governance_cost": 0,
+    "fixed": {},
+    "outcome": {
+      "threshold": 0.31423999999999985,
+      "public_threshold": 0.3142857142857143,
+      "flag_rate": 0.6857600000000001,
+      "true_positive_mass": 0.4506266112,
+      "false_positive_mass": 0.2351333888000001,
+      "false_negative_mass": 0.04937338879999997,
+      "false_positive_rate": 0.4702667776000002,
+      "vendor_revenue_excluding_fixed": 3.7228538880000013,
+      "vendor_real_cost": 1.3715200000000003,
+      "expected_penalty": 1.1756669440000005,
+      "vendor_profit_excluding_fixed": 1.1756669440000005,
+      "applicant_harm": 4.702667776000002,
+      "social_welfare": 16.457142784,
+      "welfare_loss": 7.314286065707165e-08
+    },
+    "name": "4a",
+    "label": "Model 4, per-flag reward",
+    "default_instruments": {
+      "t": 5.0
+    },
+    "default_value": 16.2
+  },
+  {
+    "model": "4",
+    "objective": "social_welfare",
+    "value": 16.450501825679012,
+    "instruments": {
+      "t": 2.3951999999999996,
+      "m": 0.05759999999999998
+    },
+    "governance_cost": 0.006635519999999995,
+    "fixed": {},
+    "outcome": {
+      "threshold": 0.31388888888888933,
+      "public_threshold": 0.3142857142857143,
+      "flag_rate": 0.6861111111111107,
+      "true_positive_mass": 0.4507368827160492,
+      "false_positive_mass": 0.23537422839506142,
+      "false_negative_mass": 0.049263117283950775,
+      "false_positive_rate": 0.47074845679012284,
+      "vendor_revenue_excluding_fixed": 1.643373333333332,
+      "vendor_real_cost": 1.3722222222222213,
+      "expected_penalty": 0.1355755555555553,
+      "vendor_profit_excluding_fixed": 0.13557555555555537,
+      "applicant_harm": 4.707484567901228,
+      "social_welfare": 16.457137345679012,
+      "welfare_loss": 5.5114638470854516e-06
+    },
+    "name": "4b",
+    "label": "Model 4, per-flag reward and costly false-flag enforcement",
+    "default_instruments": {
+      "t": 5.0,
+      "m": 0.5
+    },
+    "default_value": 15.7
+  },
+  {
+    "model": "6",
+    "objective": "social_cost",
+    "value": 15.0,
+    "instruments": {
+      "f": 64.935
+    },
+    "governance_cost": 0,
+    "fixed": {},
+    "outcome": {
+      "high_effort": true,
+      "review": false,
+      "review_after_high": false,
+      "review_after_low": false,
+      "raw_error": 0.1,
+      "final_error": 0.1,
+      "vendor_real_cost": 5.0,
+      "expected_penalty": 6.493500000000001,
+      "vendor_profit_excluding_fixed": -11.493500000000001,
+      "agency_review_cost": 0.0,
+      "agency_net_cost_excluding_fixed": 3.506499999999999,
+      "social_cost": 15.0,
+      "public_social_cost": 15.0,
+      "welfare_loss": 0.0
+    },
+    "name": "6a",
+    "label": "Model 6, penalty on uncorrected errors",
+    "default_instruments": {
+      "f": 20.0
+    },
+    "default_value": 20.0
+  },
+  {
+    "model": "8",
+    "objective": "social_cost",
+    "value": 6.0831577257461005,
+    "instruments": {
+      "w": 0.68072,
+      "p": 0.626
+    },
+    "governance_cost": 0.9659470367999999,
+    "fixed": {},
+    "outcome": {
+      "effort": 1.05169388295131,
+      "dependence": 0.37610026467883334,
+      "defect_probability": 0.3493454972681754,
+      "public_effort": 1.7455280027406994,
+      "switching_cost": 1.4626079516344814,
+      "repair_margin": 1.2313039758172408,
+      "repair_price": 3.231303975817241,
+      "private_defect_loss": 3.0104692666010715,
+      "amendment_price": 3.231303975817241,
+      "paid_repair_probability": 0.11153903036778304,
+      "continuation_revenue": 1.9760685001948377,
+      "initial_price": 1.0597976113070362,
+      "negative_initial_bid": false,
+      "vendor_real_cost": 2.3224467108006968,
+      "expected_penalty": 0.713419400701177,
+      "agency_gross_payment": 3.035866111501874,
+      "vendor_profit": 1.1102230246251565e-16,
+      "social_cost": 5.1172106889461,
+      "public_social_cost": 4.2689620069166665,
+      "welfare_loss": 0.8482486820294337
+    },
+    "name": "8a",
+    "label": "Model 8, warranty enforcement and portability (costly)",
+    "default_instruments": {
+      "w": 0.5,
+      "p": 1.0
+    },
+    "default_value": 6.363587223902225
+  },
+  {
+    "model": "9",
+    "objective": "social_cost",
+    "value": 6.0,
+    "instruments": {
+      "t": 0.0,
+      "f": 0.0
+    },
+    "governance_cost": 0,
+    "fixed": {},
+    "outcome": {
+      "work": 0.0,
+      "review": true,
+      "review_cutoff_work": 4.1588830833596715,
+      "raw_error": 1.0,
+      "final_error": 0.0,
+      "vendor_revenue_excluding_fixed": 0.0,
+      "vendor_real_cost": 0.0,
+      "expected_penalty": 0.0,
+      "vendor_profit_excluding_fixed": 0.0,
+      "agency_review_cost": 6.0,
+      "burden": 0.0,
+      "public_work": 0.0,
+      "public_review": true,
+      "social_cost": 6.0,
+      "public_social_cost": 6.0,
+      "welfare_loss": 0.0
+    },
+    "name": "9a",
+    "label": "Model 9, usage price and uncorrected-error penalty",
+    "default_instruments": {
+      "t": 3.0,
+      "f": 5.0
+    },
+    "default_value": 9.47151776468577
+  },
+  {
+    "model": "9",
+    "objective": "social_cost",
+    "value": 6.0,
+    "instruments": {
+      "t": 0.0,
+      "R": 0.0,
+      "f": 0.0
+    },
+    "governance_cost": 0,
+    "fixed": {},
+    "outcome": {
+      "work": 0.0,
+      "review": true,
+      "review_cutoff_work": 4.1588830833596715,
+      "raw_error": 1.0,
+      "final_error": 0.0,
+      "vendor_revenue_excluding_fixed": 0.0,
+      "vendor_real_cost": 0.0,
+      "expected_penalty": 0.0,
+      "vendor_profit_excluding_fixed": 0.0,
+      "agency_review_cost": 6.0,
+      "burden": 0.0,
+      "public_work": 0.0,
+      "public_review": true,
+      "social_cost": 6.0,
+      "public_social_cost": 6.0,
+      "welfare_loss": 0.0
+    },
+    "name": "9b",
+    "label": "Model 9, add verified-correctness bonus",
+    "default_instruments": {
+      "t": 3.0,
+      "R": 0.0,
+      "f": 5.0
+    },
+    "default_value": 9.47151776468577
+  }
+]

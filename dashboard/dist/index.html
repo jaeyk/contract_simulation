@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore nine game-theoretic procurement models. Change contract terms, compare scenarios, and inspect public outcomes.">
+  <meta name="theme-color" content="#183e39">
+  <title>Procurement Incentives Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to simulation</a>
+<aside class="sidebar">
+  <a class="brand" href="#model=1"><span class="brand-mark" aria-hidden="true">P/</span><span>PROCUREMENT<br>INCENTIVES LAB</span></a>
+  <div class="nav-heading">THE MODEL LIBRARY</div>
+  <nav id="models" aria-label="Game-theoretic models"></nav>
+  <div class="sidebar-note"><span class="small-dot"></span> Nine models. One question.<p>How do contract terms change vendor behavior and public outcomes?</p></div>
+  <div class="sidebar-footer">RESEARCH WORKSPACE <span>01—09</span></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><span>Contracting state / Simulation explorer</span><span class="tag">Illustrative parameters</span></header>
+  <main id="main">
+    <div class="page-heading"><div><div class="eyebrow" id="eyebrow"></div><h1 id="title"></h1><p id="description"></p></div><button class="button subtle" id="reset">Reset model ↺</button></div>
+    <section class="controls" aria-labelledby="controls-title">
+      <div class="section-heading"><h2 id="controls-title">Set the contract terms</h2><span class="live"><span></span>Recomputed locally</span></div>
+      <div class="slider-grid" id="sliders"></div>
+      <details id="advanced"><summary>All model parameters</summary><form id="parameter-form"><div class="parameter-grid" id="parameters"></div><button class="button primary" type="submit">Apply parameters</button></form></details>
+      <p role="alert" id="error" hidden></p>
+    </section>
+    <section id="metrics" class="metrics" aria-label="Selected scenario outcomes" aria-live="polite"></section>
+    <section class="chart-section" aria-labelledby="chart-heading">
+      <div class="section-heading chart-toolbar"><div><h2 id="chart-heading">How the incentives change</h2><p class="muted" id="sweep-description"></p></div><div class="actions"><label class="axis-choice">Vary <select id="axis"></select></label><button class="button" id="pin">Pin current comparison</button></div></div>
+      <div class="legend"><span><i class="line current"></i>Current terms</span><span><i class="line reference"></i><span id="comparison-label">Default comparison</span></span><span class="legend-note">● Selected parameter value</span></div>
+      <div id="charts" class="charts"></div>
+      <div id="chart-detail" class="chart-detail" aria-live="polite">Select or hover over a chart point to inspect a solved scenario.</div>
+    </section>
+    <section class="interpretation"><div class="eyebrow">READING THIS SCENARIO</div><p id="takeaway"></p><p class="muted" id="warning"></p></section>
+    <div class="bottom-grid">
+      <section class="notes"><h2>What this model assumes</h2><ul id="assumptions"></ul></section>
+      <section class="notes"><h2>Keep your experiment</h2><p>Export the current parameters, comparison, and computed sensitivity results.</p><div class="actions"><button class="button" id="export-csv">Download sweep CSV ↓</button><button class="button" id="export-json">Download scenario JSON ↓</button></div><p class="muted">Results are theoretical, not estimates from procurement data. Model scales are not directly comparable.</p></section>
+    </div>
+    <details class="outcome-details"><summary>Inspect every outcome and comparison</summary><div class="table-scroll"><table><thead><tr><th>Outcome</th><th>Current</th><th>Comparison</th></tr></thead><tbody id="outcomes"></tbody></table></div></details>
+    <footer>Deterministic equilibrium models · Bisection & backward induction <span>No data leaves your browser when adjusting parameters.</span></footer>
+  </main>
+</div>
+<noscript>This dashboard requires JavaScript to compute the model equilibria.</noscript>
+<script type="module" src="app.js"></script>
+</body>
+</html>

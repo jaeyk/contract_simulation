@@ -1,0 +1,339 @@
+family_id,indicator,present,documents_matched,documents,text_chars,document,snippet
+IL-IDES-DELOITTE-PUA,liquidated_damages,0,0,8,224993,,
+IL-IDES-DELOITTE-PUA,sla_fee_reduction,0,0,8,224993,,
+IL-IDES-DELOITTE-PUA,defect_warranty,1,1,8,224993,attcdyV9wEP012P49,"le warranty for the period beginning upon the Go-Live, as defined in Section 1.3.2, and ending 45 days thereafter (the “warranty period”). The Vendor warrants that: (a) the uFACTS for PUA/DUA software is free from Severity 1 and Severity 2 material defect"
+IL-IDES-DELOITTE-PUA,transition_assistance,1,1,8,224993,attcdyV9wEP012P49,"ations is a two-month period of ongoing maintenance and operations support. Team size is reduced and uFACTS for PUA/DUA transition plan is completed. Deloitte is responsible for maintenance and operations of uFACTS PUA/DUA during this period, consisting o"
+IL-IDES-DELOITTE-PUA,data_ownership,1,1,8,224993,attcdyV9wEP012P49,"herein, the deliverables first created by Deloitte for delivery to the State in performing its services hereunder (the “Deliverables”) shall be the property of the State. Deloitte’s uFACTS solution and all other tools, technologies, methodologies, works of authorship, and other intellectu"
+IL-IDES-DELOITTE-PUA,source_code_escrow,0,0,8,224993,,
+IL-IDES-DELOITTE-PUA,unit_pricing,0,0,8,224993,,
+IL-IDES-DELOITTE-PUA,outcome_payment,0,0,8,224993,,
+IL-IDES-DELOITTE-PUA,independent_testing,0,0,8,224993,,
+IL-IDES-DELOITTE-PUA,change_notification,0,0,8,224993,,
+IL-IDES-DELOITTE-PUA,audit_rights,1,1,8,224993,attcdyV9wEP012P49,"f this Section 1 shall control. (a) In Vendor’s performance of this contract, it and its employees and agents will have access to documents, files, records or other information that are confidential within the meaning of Section 1900 of the Unemployment Insurance Act, 820 IL"
+IL-IDES-DELOITTE-PUA,accuracy_standard,0,0,8,224993,,
+IL-IDES-DELOITTE-PUA,local_acceptance_testing,1,1,8,224993,attHHYYa8pRdSrNiV,"roduction (be accepted by IDES) by September 14, 2020. End Date Development 8/28 9/4 System Integration Testing 9/3 9/8 User Acceptance Testing 9/8 9/11 Deployment 9/13 9/13 Begin Processing LWA payments 9/14 3.S. Subcontractors are being D added, D deleted, o"
+MI-DTMB-FAST-MIDAS,liquidated_damages,1,1,1,1313600,attxgRCi9QN59LTrH,ce or willful misconduct of the Contractor; to claims covered by other specific provisions of this Contract calling for liquidated damages; or to court costs or attorney’s fees awarded by a court in addition to damages after litigation based on this Contract
+MI-DTMB-FAST-MIDAS,sla_fee_reduction,1,1,1,1313600,attxgRCi9QN59LTrH,tor for that month shall not exceed 5% of the current monthly Maintenance and Support - Level 3 Fee. 17 Support Request Service Level Credits Service Level Credits Classification (For Failure to Respond to any (For Failure to Resolve any Support Request Support
+MI-DTMB-FAST-MIDAS,defect_warranty,1,1,1,1313600,attxgRCi9QN59LTrH,"during system development so that the State can maintain and support the system after full Implementation and the final warranty period  Improve service to both Claimants and Employers through web-based, self-service activities  Eliminate manual, labor-"
+MI-DTMB-FAST-MIDAS,transition_assistance,1,1,1,1313600,attxgRCi9QN59LTrH,or Option Year 4. Ongoing development and support of UIA systems by FAST Supplemental Staff for Option Year 4 including knowledge transfer to SOM staff. 4 TASKS: FAST technical support is required to assist with the following tasks: 1. Ongoing development an
+MI-DTMB-FAST-MIDAS,data_ownership,1,1,1,1313600,attxgRCi9QN59LTrH,"ude data provided or created by Contractor unless such data is provided or created for the sole use of the State. State Data is and will remain the sole and exclusive property of the State and all right, title, and interest in the same is reserved by the State. This Section survives termination or expiratio"
+MI-DTMB-FAST-MIDAS,source_code_escrow,1,1,1,1313600,attxgRCi9QN59LTrH,Licensing................................................................................................... 133 2.330 Source Code Escrow................................................................................................ 135 2.300 Other Provisi
+MI-DTMB-FAST-MIDAS,unit_pricing,1,1,1,1313600,attxgRCi9QN59LTrH,ility periods to 4/10/21 on PUA claims o Update total pandemic weeks remaining to 50 weeks o Update new PUA applications/claim processing  New date validation to allow backdating only to 12/6/20  Submit documentation o Require documentation on
+MI-DTMB-FAST-MIDAS,outcome_payment,0,0,1,1313600,,
+MI-DTMB-FAST-MIDAS,independent_testing,1,1,1,1313600,attxgRCi9QN59LTrH,"s). All project work must be performed in close cooperation with the State, the Project Management Office (PMO) and the Independent Verification and Validation (IV&V) vendor. Refer to Section 1.202 for more information about the State Project Managers, PMO and IV&V. 1.002 BACKGR"
+MI-DTMB-FAST-MIDAS,change_notification,0,0,1,1313600,,
+MI-DTMB-FAST-MIDAS,audit_rights,1,1,1,1313600,attxgRCi9QN59LTrH,"n relevant to its compliance with this Contract. 8.2 If Contractor provides Hosted Services, without limiting any other audit rights of the State, the State has the right to review Contractor’s data privacy and information security program prior to the"
+MI-DTMB-FAST-MIDAS,accuracy_standard,0,0,1,1313600,,
+MI-DTMB-FAST-MIDAS,local_acceptance_testing,1,1,1,1313600,attxgRCi9QN59LTrH,"rchival purposes; (c) the State is authorized to make copies of the Software to establish a test environment to conduct Acceptance Testing; (d) title to and ownership of the Software and Deliverables, excluding those created for the sole use of the State, sh"
+NV-DWSS-PONDERA,liquidated_damages,0,0,2,13205,,
+NV-DWSS-PONDERA,sla_fee_reduction,0,0,2,13205,,
+NV-DWSS-PONDERA,defect_warranty,0,0,2,13205,,
+NV-DWSS-PONDERA,transition_assistance,0,0,2,13205,,
+NV-DWSS-PONDERA,data_ownership,0,0,2,13205,,
+NV-DWSS-PONDERA,source_code_escrow,0,0,2,13205,,
+NV-DWSS-PONDERA,unit_pricing,1,1,2,13205,attVt56ZkUItDLdpr,"lidation 412,000 Profiles Up to 10% increase @ no charge, (All FDaaS Licenses paid Net 30). Additional Recipients @$1.25/ profile/ year. Retailer Validation 1,800 Profiles Included as part of recipient fee Flags, Geospatial Analysis, Various Include"
+NV-DWSS-PONDERA,outcome_payment,0,0,2,13205,,
+NV-DWSS-PONDERA,independent_testing,0,0,2,13205,,
+NV-DWSS-PONDERA,change_notification,0,0,2,13205,,
+NV-DWSS-PONDERA,audit_rights,0,0,2,13205,,
+NV-DWSS-PONDERA,accuracy_standard,0,0,2,13205,,
+NV-DWSS-PONDERA,local_acceptance_testing,0,0,2,13205,,
+IN-FSSA-FRAUDCASTER,liquidated_damages,0,0,2,152381,,
+IN-FSSA-FRAUDCASTER,sla_fee_reduction,0,0,2,152381,,
+IN-FSSA-FRAUDCASTER,defect_warranty,0,0,2,152381,,
+IN-FSSA-FRAUDCASTER,transition_assistance,0,0,2,152381,,
+IN-FSSA-FRAUDCASTER,data_ownership,1,1,2,152381,attfgXVN66Y9yLtxY,"onsidered ""work for hire"" and the Contractor hereby transfers and assigns any ownership claims to the State so that all Materials will be the property of the State. If ownership interest in the Materials cannot be assigned to the State, the Contractor grants the State a non-exclusiv"
+IN-FSSA-FRAUDCASTER,source_code_escrow,0,0,2,152381,,
+IN-FSSA-FRAUDCASTER,unit_pricing,1,1,2,152381,attfgXVN66Y9yLtxY,"red on a primary, non-contributory basis. 3. Errors and Omissions liability with minimum liability limits of $1,000,000 per claim and in the aggregate. Coverage for the benefit of the State shall continue for a period of two (2) years after the date"
+IN-FSSA-FRAUDCASTER,outcome_payment,0,0,2,152381,,
+IN-FSSA-FRAUDCASTER,independent_testing,0,0,2,152381,,
+IN-FSSA-FRAUDCASTER,change_notification,0,0,2,152381,,
+IN-FSSA-FRAUDCASTER,audit_rights,1,1,2,152381,attfgXVN66Y9yLtxY,"ized by an exception listed in IC § 4-13-2-20; K. Any provision limiting disclosure of the contract in violation of the Access to Public Records Act, IC § 5-14-3. This is a Public Contract and will be posted on the transparency portal as required by Executive Orde"
+IN-FSSA-FRAUDCASTER,accuracy_standard,0,0,2,152381,,
+IN-FSSA-FRAUDCASTER,local_acceptance_testing,0,0,2,152381,,
+IN-DWD-PONDERA,liquidated_damages,0,0,2,137913,,
+IN-DWD-PONDERA,sla_fee_reduction,0,0,2,137913,,
+IN-DWD-PONDERA,defect_warranty,1,1,2,137913,att6xpYaiHvzMj8rC,"T THAT OUR SOFTWARE PRODUCTS WILL SUBSTANTIALLY CONFORM TO OUR DOCUMENTATION FOR 90 DAYS AFTER DELIVERY. IF DURING THIS WARRANTY PERIOD WE ARE UNABLE TO CORRECT, WITHIN A REASONABLE TIME PERIOD AND MANNER, A SOFTWARE ERROR YOU REPORT TO US, YOU MAY TERMIN"
+IN-DWD-PONDERA,transition_assistance,0,0,2,137913,,
+IN-DWD-PONDERA,data_ownership,1,1,2,137913,att6xpYaiHvzMj8rC,"and incorporated into this contract. Page 21 of 45 DocuSign Envelope ID: 70E58AA6-7C28-4A18-A9F8-10BC881FDBAD TERMS 1. Data Ownership: The State owns all rights, title, and interest in the Data. The contractor shall not access State user accounts or Data, except:"
+IN-DWD-PONDERA,source_code_escrow,0,0,2,137913,,
+IN-DWD-PONDERA,unit_pricing,1,1,2,137913,att6xpYaiHvzMj8rC,"red on a primary, non-contributory basis. 3. Errors and Omissions liability with minimum liability limits of $1,000,000 per claim and in the aggregate. Coverage for the benefit of the State shall continue for a period of two (2) years after the date"
+IN-DWD-PONDERA,outcome_payment,0,0,2,137913,,
+IN-DWD-PONDERA,independent_testing,0,0,2,137913,,
+IN-DWD-PONDERA,change_notification,0,0,2,137913,,
+IN-DWD-PONDERA,audit_rights,1,1,2,137913,att6xpYaiHvzMj8rC,"rized by an exception listed in IC § 4-13-2-20 K. Any provision limiting disclosure of the contract in violation of the Access to Public Records Act, IC § 5-14-3. This is a Public Contract and will be posted on the transparency portal as required by Executive Orde"
+IN-DWD-PONDERA,accuracy_standard,0,0,2,137913,,
+IN-DWD-PONDERA,local_acceptance_testing,0,0,2,137913,,
+IL-IDES-PONDERA,liquidated_damages,0,0,1,63589,,
+IL-IDES-PONDERA,sla_fee_reduction,0,0,1,63589,,
+IL-IDES-PONDERA,defect_warranty,0,0,1,63589,,
+IL-IDES-PONDERA,transition_assistance,0,0,1,63589,,
+IL-IDES-PONDERA,data_ownership,0,0,1,63589,,
+IL-IDES-PONDERA,source_code_escrow,0,0,1,63589,,
+IL-IDES-PONDERA,unit_pricing,0,0,1,63589,,
+IL-IDES-PONDERA,outcome_payment,0,0,1,63589,,
+IL-IDES-PONDERA,independent_testing,0,0,1,63589,,
+IL-IDES-PONDERA,change_notification,0,0,1,63589,,
+IL-IDES-PONDERA,audit_rights,1,1,1,63589,attTBqJ10KXNGewUy,"f this Section 1 shall control. (a) In Vendor’s performance of this contract, it and its employees and agents will have access to documents, files, records or other information that are confidential within the meaning of Section 1900 of the Unemployment Insurance Act, 820 IL"
+IL-IDES-PONDERA,accuracy_standard,0,0,1,63589,,
+IL-IDES-PONDERA,local_acceptance_testing,0,0,1,63589,,
+DC-DHS-PONDERA,liquidated_damages,0,0,2,183964,,
+DC-DHS-PONDERA,sla_fee_reduction,0,0,2,183964,,
+DC-DHS-PONDERA,defect_warranty,0,0,2,183964,,
+DC-DHS-PONDERA,transition_assistance,1,1,2,183964,attmxalxWB1sKXQDz,"um, the bidder shall detail its strategy and approach of transitioning into a project from a predecessor contractor and transition out of a contract with a client ensuring a seamless transition for the client. The bidder shall describe in the transition"
+DC-DHS-PONDERA,data_ownership,0,0,2,183964,,
+DC-DHS-PONDERA,source_code_escrow,1,1,2,183964,attmxalxWB1sKXQDz,"ict’s or the Contractor’s rights in that subcontractor data or computer software which is required for the District. E. Source Code Escrow 1. For all computer software furnished to the District with the rights specified in section B.2, the Contractor shall f"
+DC-DHS-PONDERA,unit_pricing,1,1,2,183964,attmxalxWB1sKXQDz,"-06-25-DC-DHS-FOIA-20210719-Production-Ponderas-Contract 000039 Contract. The policy shall provide limits of $1,000,000 per claim or per occurrence for each wrongful act and $2,000,000 annual aggregate. The Contractor warrants that any applicable re"
+DC-DHS-PONDERA,outcome_payment,0,0,2,183964,,
+DC-DHS-PONDERA,independent_testing,0,0,2,183964,,
+DC-DHS-PONDERA,change_notification,0,0,2,183964,,
+DC-DHS-PONDERA,audit_rights,1,1,2,183964,attmxalxWB1sKXQDz,"notice in conspicuous places available to employees and applicants for employment. (6) The Contractor agrees to permit access to its books, records, and accounts pertaining to its employment practices, by the Chief Procurement Officer or designee, or the Director of"
+DC-DHS-PONDERA,accuracy_standard,0,0,2,183964,,
+DC-DHS-PONDERA,local_acceptance_testing,1,1,2,183964,attmxalxWB1sKXQDz,"366B, Return on Investment Reporting, and Workflow, Field 0001 Designation) $130,000.00 Included under CLIN 0001 0001AA User Acceptance Testing Case Tracker subscription Included under CLIN 0001 0001AB End User Training Case Tracker subscription Included under"
+WI-DOC-NORTHPOINTE,liquidated_damages,0,0,6,215242,,
+WI-DOC-NORTHPOINTE,sla_fee_reduction,0,0,6,215242,,
+WI-DOC-NORTHPOINTE,defect_warranty,1,1,6,215242,attrWE2S3kqWkegWK,"under this Agreement. Northpointe further warrants that, for a period of 120 days from the date of this Agreement (the ""Warranty Period""), the COMPAS system will perform substantially in accordance with the documentation provided by Northpointe in Northpo"
+WI-DOC-NORTHPOINTE,transition_assistance,0,0,6,215242,,
+WI-DOC-NORTHPOINTE,data_ownership,0,0,6,215242,,
+WI-DOC-NORTHPOINTE,source_code_escrow,0,0,6,215242,,
+WI-DOC-NORTHPOINTE,unit_pricing,0,0,6,215242,,
+WI-DOC-NORTHPOINTE,outcome_payment,0,0,6,215242,,
+WI-DOC-NORTHPOINTE,independent_testing,0,0,6,215242,,
+WI-DOC-NORTHPOINTE,change_notification,0,0,6,215242,,
+WI-DOC-NORTHPOINTE,audit_rights,1,1,6,215242,attlmSsrAfUG7o06v,or any position where the primary duties and responsibilities involve contact or work with offenders/inmates OR involve access to offenders’/inmates' records or funds. Northpointe Inc. shall implement policies and procedures to ensure that any employee or staff providing servi
+WI-DOC-NORTHPOINTE,accuracy_standard,0,0,6,215242,,
+WI-DOC-NORTHPOINTE,local_acceptance_testing,1,1,6,215242,attrWE2S3kqWkegWK,"in accordance with the AGENCY's reasonable instructions. The COMPAS System will be deemed accepted upon the sign off by user acceptance testing .. 2.2InstalJation. Unless otherwise agreed to and set forth on Exhibit A, the AGENCY is responsible for installing"
+NE-DCS-VANT4GE,liquidated_damages,0,0,2,35377,,
+NE-DCS-VANT4GE,sla_fee_reduction,0,0,2,35377,,
+NE-DCS-VANT4GE,defect_warranty,0,0,2,35377,,
+NE-DCS-VANT4GE,transition_assistance,0,0,2,35377,,
+NE-DCS-VANT4GE,data_ownership,0,0,2,35377,,
+NE-DCS-VANT4GE,source_code_escrow,0,0,2,35377,,
+NE-DCS-VANT4GE,unit_pricing,0,0,2,35377,,
+NE-DCS-VANT4GE,outcome_payment,0,0,2,35377,,
+NE-DCS-VANT4GE,independent_testing,0,0,2,35377,,
+NE-DCS-VANT4GE,change_notification,0,0,2,35377,,
+NE-DCS-VANT4GE,audit_rights,1,1,2,35377,attZn22VyqM7nOIsB,"at any officer or employee of a Contractor, who by virtue of hismer e~loyment or official position has possession of or access to agency records ....-hich contain individually identifiable Information, the disdosure of which is prohibited by the Privacy Act or reg"
+NE-DCS-VANT4GE,accuracy_standard,0,0,2,35377,,
+NE-DCS-VANT4GE,local_acceptance_testing,0,0,2,35377,,
+MI-DTMB-DELOITTE-UI,liquidated_damages,1,1,1,872814,atttdMzAD6cBMJxvO,the fees for which licenses will also remain firm in accordance with the Pricing set forth in the Pricing Schedule. 14. Liquidated Damages. 14.1The parties understand and agree that any liquidated damages (which includes but is not limited to applicable cred
+MI-DTMB-DELOITTE-UI,sla_fee_reduction,1,1,1,872814,atttdMzAD6cBMJxvO,"ate does not respond to a Deliverable within the mutually agreed upon time frame, the Contractor will not be liable for Service Level Agreement Service Credits, and changes to the project schedule if the lack of response impacts future Deliverables. Contractor will meet each ind"
+MI-DTMB-DELOITTE-UI,defect_warranty,1,1,1,872814,atttdMzAD6cBMJxvO,the Software without additional user input without the inclusion of user derived Information or additional user input. “Warranty Period” means the 120 calendar-day period commencing on the date of the State's Acceptance of the Software and for which Suppo
+MI-DTMB-DELOITTE-UI,transition_assistance,1,1,1,872814,atttdMzAD6cBMJxvO,"iod of time specified by the State (not to exceed 90 calendar 27 days; the “Transition Period”), provide all reasonable transition assistance requested by the State, to allow for the expired or terminated portion of the Contract to continue without interruption"
+MI-DTMB-DELOITTE-UI,data_ownership,1,1,1,872814,atttdMzAD6cBMJxvO,"der the Health Insurance Portability and Accountability Act (“HIPAA”) and its related rules and regulations. 21.2 State Data is and will remain the sole and exclusive property of the State and all right, title, and interest in the same is reserved by the State. 21.3 Contractor Use of State Data. Contractor"
+MI-DTMB-DELOITTE-UI,source_code_escrow,1,1,1,872814,atttdMzAD6cBMJxvO,Version of the Software will not affect its right to receive Support Services throughout the Term of this Contract. 28. Source Code Escrow 28.1 Escrow Contract. The parties may enter into a separate intellectual property escrow agreement. Such escrow agreeme
+MI-DTMB-DELOITTE-UI,unit_pricing,1,1,1,872814,atttdMzAD6cBMJxvO,"of Disaster Unemployment Assistance (DUA) program. B.9 Contractor will support the ability of a claimant to submit a paper claim if the State desires to support this functionality. When a paper application is received, the solution will create a wo"
+MI-DTMB-DELOITTE-UI,outcome_payment,0,0,1,872814,,
+MI-DTMB-DELOITTE-UI,independent_testing,0,0,1,872814,,
+MI-DTMB-DELOITTE-UI,change_notification,0,0,1,872814,,
+MI-DTMB-DELOITTE-UI,audit_rights,1,1,1,872814,atttdMzAD6cBMJxvO,"any officer or employee of a contractor, who by virtue of his/her employment or official position, has possession of or access to agency records which contain individually identifiable information, the disclosure of which is prohibited by the Privacy Act or regula"
+MI-DTMB-DELOITTE-UI,accuracy_standard,0,0,1,872814,,
+MI-DTMB-DELOITTE-UI,local_acceptance_testing,1,1,1,872814,atttdMzAD6cBMJxvO,"de Operating Environment assistance as specified in the SOW to complete such preparation on a timely basis. 9. Software Acceptance Testing. 20 9.1 Acceptance Testing. (a) Unless otherwise specified in a Statement of Work, upon installation of the Software, ,"
+VA-VITA-DELOITTE,liquidated_damages,0,0,3,453014,,
+VA-VITA-DELOITTE,sla_fee_reduction,0,0,3,453014,,
+VA-VITA-DELOITTE,defect_warranty,1,1,3,453014,att1HErZ7jYMOE0s2,"nance services. The period of performance for maintenance services shall be one (1) year after implementation or end of Warranty Period and may be extended for additional one (1) year periods, pursuant to and unless otherwise specified in the Contract. (C"
+VA-VITA-DELOITTE,transition_assistance,1,1,3,453014,att1HErZ7jYMOE0s2,"provide training on your solution? If yes, please explain Y Deloitte provides documentation, training and the options. knowledge transfer to our clients both on the tools we develop and deliver. Additionally, we have eminent practitioners who deliver classe"
+VA-VITA-DELOITTE,data_ownership,0,0,3,453014,,
+VA-VITA-DELOITTE,source_code_escrow,0,0,3,453014,,
+VA-VITA-DELOITTE,unit_pricing,1,1,3,453014,att1HErZ7jYMOE0s2,"s. In addition, the following benefits were realized across 49 states in the US: Benefit: 13% reduction in average cost per claim, leading to total savings of over $10M in the first two years Methods Under Deloitte’s three phased approach, the follo"
+VA-VITA-DELOITTE,outcome_payment,0,0,3,453014,,
+VA-VITA-DELOITTE,independent_testing,0,0,3,453014,,
+VA-VITA-DELOITTE,change_notification,0,0,3,453014,,
+VA-VITA-DELOITTE,audit_rights,1,1,3,453014,att1HErZ7jYMOE0s2,t 26 J. Captions 27 Page 3 of 29 VA-150915-DELC K. Severability 27 L. Survival 27 M. Force Majeure 27 N. Remedies 27 O. Right to Audit 27 P. Offers of Employment 28 Q. Contract Administration 28 R. Entire Contract 28 Page 4 of 29 VA-150915-DELC INFORMATI
+VA-VITA-DELOITTE,accuracy_standard,0,0,3,453014,,
+VA-VITA-DELOITTE,local_acceptance_testing,1,1,3,453014,att1HErZ7jYMOE0s2,"mitments at the location(s) designated in the applicable Statement of Work or order, including completed and successful Acceptance testing in conformance with the Requirements as defined by the Authorized User and Supplier in the applicable Statement of Work"
+AZ-DES-GEOSOL-UI,liquidated_damages,0,0,4,357638,,
+AZ-DES-GEOSOL-UI,sla_fee_reduction,1,2,4,357638,attSuWT0CXsRAQ3SO,16.4 Critical SLA’s and Weighting Incident Resolution Service Level Agreements Service Response Resolution Service Time SLA Credit Service Level Level Type Measure Time Start Date Time to Steady State Severity 1 Resolve from 30 minutes 2 hours 95% 3%
+AZ-DES-GEOSOL-UI,defect_warranty,1,2,4,357638,attSuWT0CXsRAQ3SO,ring Design; Data Conversion; Development; System Testing; User Acceptance Testing; Implementation; Post-Implementation Warranty Services; Operations and Maintenance; Enhancements; and Transition Services. 8.4.4 Develop Detailed Requirements consisting of t
+AZ-DES-GEOSOL-UI,transition_assistance,1,2,4,357638,attSuWT0CXsRAQ3SO,"cceptance Testing; Implementation; Post-Implementation Warranty Services; Operations and Maintenance; Enhancements; and Transition Services. 8.4.4 Develop Detailed Requirements consisting of the following: 8.4.4.1 Underpinning the development of the Solution,"
+AZ-DES-GEOSOL-UI,data_ownership,1,2,4,357638,attSuWT0CXsRAQ3SO,"l of the Procurement Officer. 3.7. Property of the State. Any materials, including reports, computer programs and other deliverables, created under this Contract are the sole property of the State. The Contractor is not entitled to a patent or copyright on those materials and may not transfer the patent or copyrigh"
+AZ-DES-GEOSOL-UI,source_code_escrow,1,2,4,357638,attSuWT0CXsRAQ3SO,"and implementation of the System. 17. Code Escrow 17.1 Prior to full implementation, the Contractor shall enter into an escrow agreement (the “Escrow Agreement”) in a form reasonably acceptable to ADES and a mutually acceptable third-party escrow agent (th"
+AZ-DES-GEOSOL-UI,unit_pricing,0,0,4,357638,,
+AZ-DES-GEOSOL-UI,outcome_payment,0,0,4,357638,,
+AZ-DES-GEOSOL-UI,independent_testing,1,1,4,357638,attSuWT0CXsRAQ3SO,UIDE: General Unemployment Insurance Development Effort (UI claims application). 4.16 ICON: Interstate Connection. 4.17 Independent Verification and Validation (IV&V) Contractor: The person or entity with whom the ADES contracts for UI Modernization-related IV&V services. 4.18 I
+AZ-DES-GEOSOL-UI,change_notification,0,0,4,357638,,
+AZ-DES-GEOSOL-UI,audit_rights,0,0,4,357638,,
+AZ-DES-GEOSOL-UI,accuracy_standard,0,0,4,357638,,
+AZ-DES-GEOSOL-UI,local_acceptance_testing,1,1,4,357638,attSuWT0CXsRAQ3SO,retirement. 4.36 TANF: Temporary Assistance for Needy Families. 4.37 TEAM: Tax Employer Account Maintenance. 4.38 UAT: User Acceptance Testing. 4.39 UIA: Unemployment Insurance Administration. 5. General Requirements The Contractor shall: 5.1 Improve Digital
+AZ-AHCCCS-ACCENTURE-HEAPLUS,liquidated_damages,0,0,4,208692,,
+AZ-AHCCCS-ACCENTURE-HEAPLUS,sla_fee_reduction,0,0,4,208692,,
+AZ-AHCCCS-ACCENTURE-HEAPLUS,defect_warranty,0,0,4,208692,,
+AZ-AHCCCS-ACCENTURE-HEAPLUS,transition_assistance,1,1,4,208692,attmXoDdmy1jOfG4H,"s system. To facilitate the Disengagement Transition Period, the Contractor will be required to develop a comprehensive Transition Plan as described further in Exhibit A - Technical Proposal. Page 24 of 78 SCOPE OF WORK 5.3. Key Deliverables The Contracto"
+AZ-AHCCCS-ACCENTURE-HEAPLUS,data_ownership,1,1,4,208692,attmXoDdmy1jOfG4H,"rmination and minimize all further costs to the State. In the event of termination under this paragraph, all documents, data and reports prepared by the Contractor under the Contract shall become the property of and be delivered to the State upon demand. The Contractor shall be entitled to receive just and equitable compensation for work in progress, work com"
+AZ-AHCCCS-ACCENTURE-HEAPLUS,source_code_escrow,0,0,4,208692,,
+AZ-AHCCCS-ACCENTURE-HEAPLUS,unit_pricing,0,0,4,208692,,
+AZ-AHCCCS-ACCENTURE-HEAPLUS,outcome_payment,0,0,4,208692,,
+AZ-AHCCCS-ACCENTURE-HEAPLUS,independent_testing,0,0,4,208692,,
+AZ-AHCCCS-ACCENTURE-HEAPLUS,change_notification,0,0,4,208692,,
+AZ-AHCCCS-ACCENTURE-HEAPLUS,audit_rights,0,0,4,208692,,
+AZ-AHCCCS-ACCENTURE-HEAPLUS,accuracy_standard,0,0,4,208692,,
+AZ-AHCCCS-ACCENTURE-HEAPLUS,local_acceptance_testing,1,1,4,208692,attmXoDdmy1jOfG4H,"lt of all system tests with the State and resolve issues and discrepancies discovered as a result of testing, including User Acceptance Testing (UAT) and Regression Testing. For all test cycles to be executed by the State, the Contractor must assist the State"
+OH-DAS-DELOITTE-SACWIS,liquidated_damages,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,sla_fee_reduction,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,defect_warranty,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,transition_assistance,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,data_ownership,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,source_code_escrow,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,unit_pricing,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,outcome_payment,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,independent_testing,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,change_notification,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,audit_rights,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,accuracy_standard,0,0,2,11511,,
+OH-DAS-DELOITTE-SACWIS,local_acceptance_testing,0,0,2,11511,,
+IA-IDPH-PONDERA,liquidated_damages,0,0,1,51386,,
+IA-IDPH-PONDERA,sla_fee_reduction,0,0,1,51386,,
+IA-IDPH-PONDERA,defect_warranty,0,0,1,51386,,
+IA-IDPH-PONDERA,transition_assistance,0,0,1,51386,,
+IA-IDPH-PONDERA,data_ownership,1,1,1,51386,attXzfTOBlgXvLEPq,"creates, collects, develops, generates, inputs, transmits, submits, processes, stores, enters or otherwise provides the Data) are and shall remain the exclusive property of the Department, and the Department shall own and retain any rights in and to such Data, and Vendor acknowledges and agrees that notwithstanding any reform"
+IA-IDPH-PONDERA,source_code_escrow,0,0,1,51386,,
+IA-IDPH-PONDERA,unit_pricing,0,0,1,51386,,
+IA-IDPH-PONDERA,outcome_payment,0,0,1,51386,,
+IA-IDPH-PONDERA,independent_testing,0,0,1,51386,,
+IA-IDPH-PONDERA,change_notification,0,0,1,51386,,
+IA-IDPH-PONDERA,audit_rights,0,0,1,51386,,
+IA-IDPH-PONDERA,accuracy_standard,0,0,1,51386,,
+IA-IDPH-PONDERA,local_acceptance_testing,0,0,1,51386,,
+ND-DOH-PROUDCROWD,liquidated_damages,0,0,1,6748,,
+ND-DOH-PROUDCROWD,sla_fee_reduction,0,0,1,6748,,
+ND-DOH-PROUDCROWD,defect_warranty,0,0,1,6748,,
+ND-DOH-PROUDCROWD,transition_assistance,0,0,1,6748,,
+ND-DOH-PROUDCROWD,data_ownership,0,0,1,6748,,
+ND-DOH-PROUDCROWD,source_code_escrow,0,0,1,6748,,
+ND-DOH-PROUDCROWD,unit_pricing,0,0,1,6748,,
+ND-DOH-PROUDCROWD,outcome_payment,0,0,1,6748,,
+ND-DOH-PROUDCROWD,independent_testing,0,0,1,6748,,
+ND-DOH-PROUDCROWD,change_notification,0,0,1,6748,,
+ND-DOH-PROUDCROWD,audit_rights,0,0,1,6748,,
+ND-DOH-PROUDCROWD,accuracy_standard,0,0,1,6748,,
+ND-DOH-PROUDCROWD,local_acceptance_testing,0,0,1,6748,,
+TX-TWC-ONPOINT,liquidated_damages,0,0,2,97433,,
+TX-TWC-ONPOINT,sla_fee_reduction,0,0,2,97433,,
+TX-TWC-ONPOINT,defect_warranty,0,0,2,97433,,
+TX-TWC-ONPOINT,transition_assistance,0,0,2,97433,,
+TX-TWC-ONPOINT,data_ownership,0,0,2,97433,,
+TX-TWC-ONPOINT,source_code_escrow,0,0,2,97433,,
+TX-TWC-ONPOINT,unit_pricing,0,0,2,97433,,
+TX-TWC-ONPOINT,outcome_payment,0,0,2,97433,,
+TX-TWC-ONPOINT,independent_testing,0,0,2,97433,,
+TX-TWC-ONPOINT,change_notification,0,0,2,97433,,
+TX-TWC-ONPOINT,audit_rights,0,0,2,97433,,
+TX-TWC-ONPOINT,accuracy_standard,0,0,2,97433,,
+TX-TWC-ONPOINT,local_acceptance_testing,1,1,2,97433,attGtMjPye0LhMSqo,"the PO, whichever comes last. 8.2. In no event shall use of the product by TWC, for any purpose during any phase of the acceptance testing, constitute acceptance of any product by TWC. 8.3. Prior to any payment being made, the goods or services being invoice"
+KS-DOA-PONDERA,liquidated_damages,0,0,2,42786,,
+KS-DOA-PONDERA,sla_fee_reduction,0,0,2,42786,,
+KS-DOA-PONDERA,defect_warranty,0,0,2,42786,,
+KS-DOA-PONDERA,transition_assistance,1,1,2,42786,attS7rfXOMLWdWLDT,"the experience of other users, or warranties of performance shall be incorporated by reference into the contract. 1.57. Transition Assistance In the event of contract termination or expiration, Contractor shall provide all reasonable and necessary assistance to"
+KS-DOA-PONDERA,data_ownership,0,0,2,42786,,
+KS-DOA-PONDERA,source_code_escrow,0,0,2,42786,,
+KS-DOA-PONDERA,unit_pricing,0,0,2,42786,,
+KS-DOA-PONDERA,outcome_payment,0,0,2,42786,,
+KS-DOA-PONDERA,independent_testing,0,0,2,42786,,
+KS-DOA-PONDERA,change_notification,0,0,2,42786,,
+KS-DOA-PONDERA,audit_rights,1,1,2,42786,attS7rfXOMLWdWLDT,"ed to, personnel of the using agency; independent auditors acting on behalf of state and/or federal agencies shall have access to and the right to examine records during the contract period and during the five (5) year post contract period. Delivery of and access to the records sha"
+KS-DOA-PONDERA,accuracy_standard,0,0,2,42786,,
+KS-DOA-PONDERA,local_acceptance_testing,0,0,2,42786,,
+DC-DCHA-RENTGROW,liquidated_damages,0,0,1,49416,,
+DC-DCHA-RENTGROW,sla_fee_reduction,0,0,1,49416,,
+DC-DCHA-RENTGROW,defect_warranty,0,0,1,49416,,
+DC-DCHA-RENTGROW,transition_assistance,0,0,1,49416,,
+DC-DCHA-RENTGROW,data_ownership,0,0,1,49416,,
+DC-DCHA-RENTGROW,source_code_escrow,0,0,1,49416,,
+DC-DCHA-RENTGROW,unit_pricing,0,0,1,49416,,
+DC-DCHA-RENTGROW,outcome_payment,0,0,1,49416,,
+DC-DCHA-RENTGROW,independent_testing,0,0,1,49416,,
+DC-DCHA-RENTGROW,change_notification,0,0,1,49416,,
+DC-DCHA-RENTGROW,audit_rights,1,1,1,49416,atthX9MzTfKmF4nkW,"uted Fees when due Is a material breach subject to the terms of section 2(b) (Tesmlnalion). Additionally, Client ex- d. Right to Audit and Compliance. In accordance with pressly acknowledges and agrees that: (i) Undisputed Fees RenlGrow's obligations to"
+DC-DCHA-RENTGROW,accuracy_standard,0,0,1,49416,,
+DC-DCHA-RENTGROW,local_acceptance_testing,0,0,1,49416,,
+NASPO-CLOUD-SHI,liquidated_damages,1,1,2,724131,attZa6xDJPgnmNNEz,"he effective date of said notice. The Eligible User will not be liable for any performance, commitments , penalties, or liquidated damages that accrue after the effective date of said written notice. 21. SALES TAX EXEMPTION: The Goods, Custom Deliverables, o"
+NASPO-CLOUD-SHI,sla_fee_reduction,0,0,2,724131,,
+NASPO-CLOUD-SHI,defect_warranty,1,2,2,724131,attQpRMpvhQMI3NEh,"spect to the Services and Citrix provision of such Services to Customers. 7. WARRANTIES AND WARRANTY DISCLAIMER. CITRIX WARRANTS THAT THE SERVICES, INCLUDING WITHOUT LIMITATION ANY COMPONENTS DELIVERED WITH SERVICES, WILL MATERIALLY CONFORM TO THE SERVICE DESCRIPTIONS. CITRIX DOES NOT REPRESENT OR WARRANT THAT (I) THE USE OF SUCH SERVICES WILL BE TIMELY, UNI"
+NASPO-CLOUD-SHI,transition_assistance,1,1,2,724131,attQpRMpvhQMI3NEh,"must use industry-leading technology to detect and remove worms, Trojans, rootkits, rogues, dialers, spyware, etc. 32. Transition Assistance: a. The Contractor shall reasonably cooperate with other parties in connection with all Services to be delivered under"
+NASPO-CLOUD-SHI,data_ownership,1,1,2,724131,attQpRMpvhQMI3NEh,"t of any Purchasing Entity to indemnification by the Contractor, rights of payment for Services delivered and accepted, data ownership, Contractor obligations regarding Purchasing Entity Data, rights attending default in performance an applicable Service Level of Agreement in association with any Order, C"
+NASPO-CLOUD-SHI,source_code_escrow,0,0,2,724131,,
+NASPO-CLOUD-SHI,unit_pricing,1,1,2,724131,attQpRMpvhQMI3NEh,free number and call center for affected individuals required by federal and state laws — all not to exceed the average per record per person cost calculated for data breaches in the United States (currently $217 per record/person) in the most recent
+NASPO-CLOUD-SHI,outcome_payment,0,0,2,724131,,
+NASPO-CLOUD-SHI,independent_testing,0,0,2,724131,,
+NASPO-CLOUD-SHI,change_notification,1,1,2,724131,attQpRMpvhQMI3NEh,"ll have no liability, for any Infringement Claim based on (i) Customer’s access to and/or use of the Services following notice of an Infringement Claim; (ii) any modification of the Services by Customer or at its direction; (iii) Customer’s combination of the Services with third party programs, services, dat"
+NASPO-CLOUD-SHI,audit_rights,1,1,2,724131,attZa6xDJPgnmNNEz,"hever is later. Contractor agrees to allow, at no additional cost, State of Utah and federal auditors, and the Division access to all such records. 6. CERTIFY REGISTRATION AND USE OF EMPLOYMENT ""STATUS VERIFICATION SYSTEM"": This Status Verification System, also refe"
+NASPO-CLOUD-SHI,accuracy_standard,0,0,2,724131,,
+NASPO-CLOUD-SHI,local_acceptance_testing,0,0,2,724131,,
+NASPO-CLOUD-CARAHSOFT,liquidated_damages,0,0,2,2614893,,
+NASPO-CLOUD-CARAHSOFT,sla_fee_reduction,1,1,2,2614893,attfGqEf6Yz4R5GQt,"their duties and responsibilities during a disruption and how to recover their areas after the disruption occurs. Hanna Service Level Credits Where SAP fails to meet a Service Level, SAP will be liable to Customer for the corresponding Service Level Credit as s"
+NASPO-CLOUD-CARAHSOFT,defect_warranty,1,1,2,2614893,attfGqEf6Yz4R5GQt,"party software or hardware which has not been previously approved in writing by FireEye. If during the one-year Product warranty period: (a) FireEye is notified promptly in writing upon discovery of any error in a Product, including a detailed description"
+NASPO-CLOUD-CARAHSOFT,transition_assistance,1,1,2,2614893,attfGqEf6Yz4R5GQt,"must use industry-leading technology to detect and remove worms, Trojans, rootkits, rogues, dialers, spyware, etc. 32. Transition Assistance: a. The Contractor shall reasonably cooperate with other parties in connection with all Services to be delivered under"
+NASPO-CLOUD-CARAHSOFT,data_ownership,1,1,2,2614893,attfGqEf6Yz4R5GQt,"ance” of those Additional Terms before access is permitted. Exhibit 1 to the Master Agreement: Software-as-a-Service 1. Data Ownership: The Purchasing Entity will own all right, title and interest in its data that is related to the Services provided by this Master Agreement. T"
+NASPO-CLOUD-CARAHSOFT,source_code_escrow,0,0,2,2614893,,
+NASPO-CLOUD-CARAHSOFT,unit_pricing,1,1,2,2614893,attfGqEf6Yz4R5GQt,"AAS Sandbox Near Production Environment CODSB2991 $ 48,000.00 $ 37,632.00 DocuSign 3rd Party Solutions ‐ Conga composer/Per Transaction ‐ ADD ON DS‐3PS‐CCT $ 2.00 $ 1.95 DocuSign 3rd Party Solutions ‐ Conga composer/Seat Per Year ‐ ADD ON DS‐3PS‐CCY $ 180"
+NASPO-CLOUD-CARAHSOFT,outcome_payment,0,0,2,2614893,,
+NASPO-CLOUD-CARAHSOFT,independent_testing,0,0,2,2614893,,
+NASPO-CLOUD-CARAHSOFT,change_notification,0,0,2,2614893,,
+NASPO-CLOUD-CARAHSOFT,audit_rights,1,1,2,2614893,attfGqEf6Yz4R5GQt,es of data and systems that each person needs to do his/her job. We require that each workforce member restrict his/her access to only those specific records and functions needed to carry out his/her job. For the purposes of this policy workforce members are anyone in V ​irtru
+NASPO-CLOUD-CARAHSOFT,accuracy_standard,1,1,2,2614893,attfGqEf6Yz4R5GQt,nse operations from the Alert Logic SOC. Threat Manager's Expert System identifies valid security events and suppresses false positives through a patented multifactor correlation process. Every security event monitored by its global network of threat sens
+NASPO-CLOUD-CARAHSOFT,local_acceptance_testing,0,0,2,2614893,,
+NASPO-CLOUD-QUEST,liquidated_damages,1,1,2,294155,attX0eok6igU3Y6rE,"ght 2016, Quest. All Rights Reserved. Client Name NASPO ValuePoint FDaaS Service Level Agreement Quest Managed Services liquidated damages against Quest equal to one (1) year of billable engineering time or $50,000.00, whichever is greater. 14.2. Client. Dur"
+NASPO-CLOUD-QUEST,sla_fee_reduction,0,0,2,294155,,
+NASPO-CLOUD-QUEST,defect_warranty,0,0,2,294155,,
+NASPO-CLOUD-QUEST,transition_assistance,1,1,2,294155,attX0eok6igU3Y6rE,"must use industry-leading technology to detect and remove worms, Trojans, rootkits, rogues, dialers, spyware, etc. 32. Transition Assistance: a. The Contractor shall reasonably cooperate with other parties in connection with all Services to be delivered under"
+NASPO-CLOUD-QUEST,data_ownership,1,1,2,294155,attX0eok6igU3Y6rE,"t of any Purchasing Entity to indemnification by the Contractor, rights of payment for Services delivered and accepted, data ownership, Contractor obligations regarding Purchasing Entity Data, rights attending default in performance an applicable Service Level of Agreement in association with any Order, C"
+NASPO-CLOUD-QUEST,source_code_escrow,0,0,2,294155,,
+NASPO-CLOUD-QUEST,unit_pricing,1,1,2,294155,attX0eok6igU3Y6rE,free number and call center for affected individuals required by federal and state laws — all not to exceed the average per record per person cost calculated for data breaches in the United States (currently $217 per record/person) in the most recent
+NASPO-CLOUD-QUEST,outcome_payment,0,0,2,294155,,
+NASPO-CLOUD-QUEST,independent_testing,0,0,2,294155,,
+NASPO-CLOUD-QUEST,change_notification,0,0,2,294155,,
+NASPO-CLOUD-QUEST,audit_rights,0,0,2,294155,,
+NASPO-CLOUD-QUEST,accuracy_standard,1,1,2,294155,attX0eok6igU3Y6rE,"hout any “real world” validation can result in a deluge of alerts without any meaningful priority or triage process and false positives that waste precious investigative time and resources. To avoid this, the Pondera SIU will independently review and vali"
+NASPO-CLOUD-QUEST,local_acceptance_testing,1,1,2,294155,attX0eok6igU3Y6rE,"pport a user test/staging environment that is identical to production. In addition to a FDaaS Production environment, a User Acceptance Test, or UAT environment is hosted. The UAT environment is identical to the Production environment in terms of hardware, sof"
+NASPO-CLOUD-TCC,liquidated_damages,0,0,1,564926,,
+NASPO-CLOUD-TCC,sla_fee_reduction,0,0,1,564926,,
+NASPO-CLOUD-TCC,defect_warranty,0,0,1,564926,,
+NASPO-CLOUD-TCC,transition_assistance,1,1,1,564926,att8gcf9xSiJUklR4,"must use industry-leading technology to detect and remove worms, Trojans, rootkits, rogues, dialers, spyware, etc. 32. Transition Assistance: a. The Contractor shall reasonably cooperate with other parties in connection with all Services to be delivered under"
+NASPO-CLOUD-TCC,data_ownership,1,1,1,564926,att8gcf9xSiJUklR4,"t of any Purchasing Entity to indemnification by the Contractor, rights of payment for Services delivered and accepted, data ownership, Contractor obligations regarding Purchasing Entity Data, rights attending default in performance an applicable Service Level of Agreement in association with any Order, C"
+NASPO-CLOUD-TCC,source_code_escrow,0,0,1,564926,,
+NASPO-CLOUD-TCC,unit_pricing,1,1,1,564926,att8gcf9xSiJUklR4,free number and call center for affected individuals required by federal and state laws — all not to exceed the average per record per person cost calculated for data breaches in the United States (currently $217 per record/person) in the most recent
+NASPO-CLOUD-TCC,outcome_payment,0,0,1,564926,,
+NASPO-CLOUD-TCC,independent_testing,0,0,1,564926,,
+NASPO-CLOUD-TCC,change_notification,0,0,1,564926,,
+NASPO-CLOUD-TCC,audit_rights,0,0,1,564926,,
+NASPO-CLOUD-TCC,accuracy_standard,0,0,1,564926,,
+NASPO-CLOUD-TCC,local_acceptance_testing,0,0,1,564926,,
+NASPO-CLOUD-DELOITTE,liquidated_damages,1,1,1,604699,attVxNGm8fvTreJkl,"rics are not met. In the event of failure to deliver Disaster Recovery SLAs, Service Credit shall be applied in lieu of liquidated damages against the following year of service cost. If service is discontinued for any reason, the Service Credit shall be in t"
+NASPO-CLOUD-DELOITTE,sla_fee_reduction,1,1,1,604699,attVxNGm8fvTreJkl,ice Level Description (the “Down Time Warranty”). In the event of a breach of the foregoing warranty Vendor shall apply service level credits based on the actual availability measure for the applicable period as follows: Availability Service Level Credit 99.500
+NASPO-CLOUD-DELOITTE,defect_warranty,1,1,1,604699,attVxNGm8fvTreJkl,"ations, for a breach of the foregoing warranty. Licensee must provide notice to Vendor of any warranty claim within the warranty period. For clarity, Licensee’s entitlement to Support (as defined in Section 3(b)) in connection with any Documented Defect s"
+NASPO-CLOUD-DELOITTE,transition_assistance,1,1,1,604699,attVxNGm8fvTreJkl,"must use industry-leading technology to detect and remove worms, Trojans, rootkits, rogues, dialers, spyware, etc. 32. Transition Assistance: a. The Contractor shall reasonably cooperate with other parties in connection with all Services to be delivered under"
+NASPO-CLOUD-DELOITTE,data_ownership,1,1,1,604699,attVxNGm8fvTreJkl,"t of any Purchasing Entity to indemnification by the Contractor, rights of payment for Services delivered and accepted, data ownership, Contractor obligations regarding Purchasing Entity Data, rights attending default in performance an applicable Service Level of Agreement in association with any Order, C"
+NASPO-CLOUD-DELOITTE,source_code_escrow,0,0,1,604699,,
+NASPO-CLOUD-DELOITTE,unit_pricing,1,1,1,604699,attVxNGm8fvTreJkl,free number and call center for affected individuals required by federal and state laws — all not to exceed the average per record per person cost calculated for data breaches in the United States (currently $217 per record/person) in the most recent
+NASPO-CLOUD-DELOITTE,outcome_payment,0,0,1,604699,,
+NASPO-CLOUD-DELOITTE,independent_testing,0,0,1,604699,,
+NASPO-CLOUD-DELOITTE,change_notification,0,0,1,604699,,
+NASPO-CLOUD-DELOITTE,audit_rights,1,1,1,604699,attVxNGm8fvTreJkl,N ADVISED OF THE POSSIBILITY OF SUCH DAMAGES OR WHETHER ANY REMEDY SET FORTH HEREIN FAILS OF ITS ESSENTIAL PURPOSE. 15. Audit Rights. Vendor (including any third party auditor retained by Vendor) may audit the records and systems of Licensee to ensure
+NASPO-CLOUD-DELOITTE,accuracy_standard,0,0,1,604699,,
+NASPO-CLOUD-DELOITTE,local_acceptance_testing,0,0,1,604699,,
+NASPO-CLOUD-ENFORMION,liquidated_damages,0,0,1,178300,,
+NASPO-CLOUD-ENFORMION,sla_fee_reduction,0,0,1,178300,,
+NASPO-CLOUD-ENFORMION,defect_warranty,0,0,1,178300,,
+NASPO-CLOUD-ENFORMION,transition_assistance,1,1,1,178300,attRGDCRjSiJmNx3G,"must use industry-leading technology to detect and remove worms, Trojans, rootkits, rogues, dialers, spyware, etc. 32. Transition Assistance: a. The Contractor shall reasonably cooperate with other parties in connection with all Services to be delivered under"
+NASPO-CLOUD-ENFORMION,data_ownership,1,1,1,178300,attRGDCRjSiJmNx3G,"t of any Purchasing Entity to indemnification by the Contractor, rights of payment for Services delivered and accepted, data ownership, Contractor obligations regarding Purchasing Entity Data, rights attending default in performance an applicable Service Level of Agreement in association with any Order, C"
+NASPO-CLOUD-ENFORMION,source_code_escrow,0,0,1,178300,,
+NASPO-CLOUD-ENFORMION,unit_pricing,1,1,1,178300,attRGDCRjSiJmNx3G,s Search Tool: In support of the Cloud Offerings Search Tool here: http://www.naspovaluepoint.org/#/contract- details/71/search Contractor shall ensure its Cloud Offerings are accurately reported and updated to the Lead State in the format/templat
+NASPO-CLOUD-ENFORMION,outcome_payment,0,0,1,178300,,
+NASPO-CLOUD-ENFORMION,independent_testing,0,0,1,178300,,
+NASPO-CLOUD-ENFORMION,change_notification,0,0,1,178300,,
+NASPO-CLOUD-ENFORMION,audit_rights,1,1,1,178300,attRGDCRjSiJmNx3G,"nt are merely minimum standards of conduct for Customer in furtherance of the foregoing continuing obligation. 4. FEES, AUDIT RIGHTS AND FINANCIAL STATEMENTS. 4.1. Fees. Customer agrees to pay Confi-Chek the applicable charges as set forth in Exhibit A"
+NASPO-CLOUD-ENFORMION,accuracy_standard,0,0,1,178300,,
+NASPO-CLOUD-ENFORMION,local_acceptance_testing,0,0,1,178300,,
+NASPO-MMIS-OPTUM,liquidated_damages,1,1,2,753440,attQGjrkcChFRcu95,s of the security audit failure. of the security audit failure. CAP must be delivered in ten (10) Business days or less Liquidated Damages: Department shall assess the liquidated damages as specified below for failure to meet the Performance Standard timefra
+NASPO-MMIS-OPTUM,sla_fee_reduction,0,0,2,753440,,
+NASPO-MMIS-OPTUM,defect_warranty,1,1,2,753440,attQGjrkcChFRcu95,"r defects or errors which are not material to the State) for a period of ninety (90) days from the date of acceptance (“Warranty Period”), unless otherwise specified in the Solicitation Documents. If the Software does not perform in accordance with such s"
+NASPO-MMIS-OPTUM,transition_assistance,1,1,2,753440,attQGjrkcChFRcu95,"he State shall not be liable to the Vendor for loss of profits because of a Stop Work Order issued under this term. 41) TRANSITION ASSISTANCE: If the Agreement is not renewed at the end of the term, or is canceled prior to its expiration, for any reason, the Ve"
+NASPO-MMIS-OPTUM,data_ownership,1,1,2,753440,attQGjrkcChFRcu95,"to be), for calls made at any time 6) STATE PROPERTY AND INTANGIBLES RIGHTS: The parties acknowledge and agree that the State shall own all right, title and interest in and to the copyright in any and all software, technical information, specifications, d"
+NASPO-MMIS-OPTUM,source_code_escrow,0,0,2,753440,,
+NASPO-MMIS-OPTUM,unit_pricing,0,0,2,753440,,
+NASPO-MMIS-OPTUM,outcome_payment,0,0,2,753440,,
+NASPO-MMIS-OPTUM,independent_testing,1,2,2,753440,attcHlYcYTuzPAOgG,TM) 9 days Thu 7/12/18 1717 1.7.2.105.1.1 Schedule Requirements Traceability Matrix (RTM) Review Session with DPHHS and IV&V 0.25 Team days Thu 7/12/18 1718 1.7.2.105.1.2 Finalize Requirements Traceability Matrix (RTM) Content and Reporting Req
+NASPO-MMIS-OPTUM,change_notification,0,0,2,753440,,
+NASPO-MMIS-OPTUM,audit_rights,1,1,2,753440,attQGjrkcChFRcu95,"Agency shall so advise Vendor and may proceed to procure the particular substitute Services or other Deliverables. 14) ACCESS TO PERSONS AND RECORDS: Pursuant to N.C.G.S. §147-64.7, the Agency, the State Auditor, appropriate federal officials, and their respective aut"
+NASPO-MMIS-OPTUM,accuracy_standard,0,0,2,753440,,
+NASPO-MMIS-OPTUM,local_acceptance_testing,1,2,2,753440,attcHlYcYTuzPAOgG,"gn, Development & Implementation (DDI) Payment Milestone by Phase DDI Phase Payment Milestone Development Configuration User Acceptance Testing and Implementation and and Build Integration Testing Acceptance Certification Total Cost Provider Enrollment $913,20"
